@@ -1,13 +1,21 @@
 .page-footer {
-	display: flex;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	background-color: #000000;
 }
 
 .page-footer__copyright {
-	color: #ffffff;
+	width: 355px;
+	color: $light-grey;
+	text-align: center;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
 }
 
 .page-footer__wrapper {
+	display: flex;
+	justify-content: space-evenly;
 	margin-left: auto;
  	margin-right: auto;
  	padding: 0;

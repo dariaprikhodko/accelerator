@@ -10,7 +10,7 @@
 
 	&:hover {
 		background-color: $red;
-		border: 1px solid $red;;
+		border: 1px solid $red;
 	}
 }
 
@@ -30,7 +30,26 @@
 	background-color: $blue;
 }
 
-.button-red {
+.button-white {
 	border: 1px solid #ffffff;
 }
 
+.button-middle {
+	width: 182px;
+	height: 45px;
+}
+
+.button-middle +.button-white {
+	margin-left: 4px;
+	color: $blue;
+	border: 2px solid $blue;
+
+	&:hover {
+		color: #ffffff;
+		border: none;
+	}
+}
+
+.buttons-wrapper__main {
+	margin-top: 18px;
+}
