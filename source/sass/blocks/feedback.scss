@@ -1,0 +1,55 @@
+.feedback {
+	padding-top: 90px;
+}
+
+.feedback-list {
+	display: flex;
+	list-style: none;
+}
+
+.feedback-list__item {
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 360px;
+	box-sizing: border-box;
+
+	&:first-child {
+		margin-left: 0;
+	}
+
+}
+
+.feedback-list__text {
+	margin: 0;
+    padding: 30px;
+    box-sizing: border-box;
+	min-height: 342px;
+	background-color: $light-grey;
+	font-size: 16px;
+	line-height: 25px;
+	text-align: center;
+
+	&:first-child {
+		padding-bottom: 10px;
+	}
+}
+
+.feedback-author, .feedback-level {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.feedback-author {
+	margin-top: 12px;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 600;
+	color: $blue;
+}
+
+.feedback-level {
+	font-size: 14px;
+	line-height: 22px;
+	color: #777777;
+}

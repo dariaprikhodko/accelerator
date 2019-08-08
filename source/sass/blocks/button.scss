@@ -1,0 +1,36 @@
+.button {
+	display: block;
+	font-size: 16px;
+	font-weight: 700;
+	color: #ffffff;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	box-sizing: border-box;
+
+	&:hover {
+		background-color: $red;
+		border: 1px solid $red;;
+	}
+}
+
+.button-big {
+	width: 257px;
+	height: 58px;
+	border: 1px solid $blue;
+
+
+}
+
+.button-big +.button-blue {
+	margin-right: 10px;
+}
+
+.button-blue {
+	background-color: $blue;
+}
+
+.button-red {
+	border: 1px solid #ffffff;
+}
+

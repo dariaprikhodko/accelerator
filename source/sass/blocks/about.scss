@@ -1,0 +1,23 @@
+.about {
+	display: flex;
+	padding-top: 120px;
+	padding-bottom: 120px;
+	box-sizing: border-box;
+	background-color: $light-grey;
+	font-size: 32px;
+	line-height: 48px;
+
+	a {
+		color: $blue;
+		text-decoration: none;
+	}
+}
+
+.about-info {
+	display: block;
+	margin: 0 auto;
+	margin-top: 60px;
+    margin-bottom: 68px;
+	width: 960px;
+	text-align: center;
+}

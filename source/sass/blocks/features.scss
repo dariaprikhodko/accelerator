@@ -1,0 +1,24 @@
+.features {
+	padding-top: 90px;
+    padding-bottom: 50px;
+	background-color: $light-grey;
+}
+
+.features-list {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+
+.features-list__title {
+	color: $blue;
+}
+
+.features-list__item {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.features-list__description {
+	width: 560px;
+}

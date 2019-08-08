@@ -1,0 +1,13 @@
+.faq-list {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+
+.faq-list__title {
+	color: $blue;
+}
+
+.faq-list__item {
+	width: 760px;
+}

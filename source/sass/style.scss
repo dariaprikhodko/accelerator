@@ -1,4 +1,18 @@
-h1 {
-  color: blue;
-}
+@import "global.scss";
+@import "variables.scss";
+@import "blocks/header.scss";
+@import "blocks/button.scss";
+@import "blocks/about.scss";
+@import "blocks/page-main.scss";
+@import "blocks/problems.scss";
+@import "blocks/features.scss";
+@import "blocks/feedback.scss";
+@import "blocks/projects.scss";
+@import "blocks/faqs.scss";
+@import "blocks/footer.scss";
+
+
+
+
+
 

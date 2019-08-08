@@ -1,0 +1,19 @@
+.problems {
+	padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.problems-list {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+}
+
+.problems-list__item {
+	display: block;
+	width: 560px;
+}
+
+.problems-list__title {
+	color: $blue;
+}
