@@ -17,9 +17,10 @@
 
 .features-list__item {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .features-list__description {
+  margin-right: 110px;
   width: 560px;
 }

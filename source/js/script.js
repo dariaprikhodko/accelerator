@@ -10,13 +10,14 @@ var features = document.querySelector('.features');
 
 buttonCross.forEach(function (btn) {
   btn.addEventListener('click', function () {
+    var i = 0;
 
-    if (answer.classList.contains('faq-list__answer--closed')) {
-      answer.classList.remove('faq-list__answer--closed');
-      answer.classList.add('faq-list__answer--opened');
+    if (answer[i].classList.contains('faq-list__answer--closed')) {
+      answer[i].classList.remove('faq-list__answer--closed');
+      answer[i].classList.add('faq-list__answer--opened');
     } else {
-      answer.classList.add('faq-list__answer--closed');
-      answer.classList.remove('faq-list__answer--opened');
+      answer[i].classList.add('faq-list__answer--closed');
+      answer[i].classList.remove('faq-list__answer--opened');
     }
   });
 });
