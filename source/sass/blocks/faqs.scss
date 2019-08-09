@@ -1,22 +1,39 @@
 .faqs {
-	padding-top: 90px;
+  padding-top: 90px;
 }
 
 .faq-list {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-bottom: 0;
-	padding-bottom: 90px;
-	list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  margin-top: 90px;
+  padding-bottom: 90px;
+  list-style: none;
 }
 
 .faq-list__title {
-	color: $blue;
-	font-size: 21px;
-	font-weight: 600;
+  color: $blue;
+  font-size: 21px;
+  font-weight: 600;
 }
 
 .faq-list__item {
-	width: 760px;
+  position: relative;
+  display: block;
+  width: 760px;
+  border-top: 1px solid $light-grey;
 }
+
+.faq-list__item:last-child {
+  border-bottom: 1px solid $light-grey;
+}
+
+.faq-list__answer--closed {
+  display: none;
+}
+
+.faq-list__answer--opened {
+  visibility: block;
+}
+

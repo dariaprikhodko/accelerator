@@ -1,24 +1,25 @@
 .features {
-	padding-top: 90px;
+  padding-top: 90px;
     padding-bottom: 50px;
-	background-color: $light-grey;
+  background-color: $light-grey;
 }
 
 .features-list {
-	display: flex;
-	flex-direction: column;
-	list-style: none;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
 }
 
 .features-list__title {
-	color: $blue;
+  padding-left: 200px;
+  color: $blue;
 }
 
 .features-list__item {
-	display: flex;
-	justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .features-list__description {
-	width: 560px;
+  width: 560px;
 }

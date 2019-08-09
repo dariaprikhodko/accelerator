@@ -1,23 +1,26 @@
 .page-footer {
-	padding-top: 30px;
-	padding-bottom: 30px;
-	background-color: #000000;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #000000;
 }
 
 .page-footer__copyright {
-	width: 355px;
-	color: $light-grey;
-	text-align: center;
-	font-size: 16px;
-	line-height: 22px;
-	font-weight: 500;
+  width: 355px;
+  color: $light-grey;
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
 }
 
 .page-footer__wrapper {
-	display: flex;
-	justify-content: space-evenly;
-	margin-left: auto;
- 	margin-right: auto;
- 	padding: 0;
- 	width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  width: 1200px;
 }

@@ -1,19 +1,43 @@
 .problems {
-	padding-top: 90px;
-    padding-bottom: 90px;
+  padding-top: 90px;
+    padding-bottom: 30px;
 }
 
 .problems-list {
-	display: flex;
-	flex-wrap: wrap;
-	list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding-top: 20px;
+  list-style: none;
 }
 
 .problems-list__item {
-	display: block;
-	width: 560px;
+  display: block;
+  margin-right: 20px;
+  padding-left: 40px;
+  padding-bottom: 55px;
+  width: 510px;
 }
 
 .problems-list__title {
-	color: $blue;
+  position: relative;
+  margin: 0;
+  margin-bottom: 15px;
+  color: $blue;
+}
+
+.problems-list__title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -50px;
+  top: -5px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/checkmark.svg");
+}
+
+.problems-list__description {
+  margin: 0;
 }
