@@ -61,9 +61,28 @@
 .button-cross {
   position: absolute;
   top: 30px;
-    left: 720px;
+  left: 720px;
+  appearance: none;
+  border: none;
   background-image: url("../img/cross.svg");
-  background-color: #fffffff;
-  width: 24px;
-  height: 24px;
+  fill: #000000;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+
+  &:hover {
+    border-radius: 50%;
+    background-color: $blue;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .buttons-wrapper__main {
+    flex-direction: column;
+  }
+
+  .button-middle +.button-white {
+    margin-left: 0;
+    margin-top: 8px;
+  }
 }

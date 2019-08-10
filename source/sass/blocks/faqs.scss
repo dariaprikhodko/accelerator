@@ -36,3 +36,14 @@
 .faq-list__answer--opened {
   visibility: block;
 }
+
+@media screen and (max-width: 768px) {
+  .faq-list {
+    width: 640px;
+    padding-left: 0;
+  }
+
+  .faq-list__item {
+    width: 550px;
+  }
+}

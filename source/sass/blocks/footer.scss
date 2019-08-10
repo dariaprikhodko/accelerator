@@ -24,3 +24,14 @@
     box-sizing: border-box;
   width: 1200px;
 }
+
+@media screen and (max-width: 768px) {
+  .page-footer__wrapper {
+    flex-direction: column;
+    align-items: center;
+    width: 768px;
+  }
+  .page-footer__copyright {
+    width: auto;
+  }
+}

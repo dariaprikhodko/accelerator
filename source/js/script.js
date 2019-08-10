@@ -8,9 +8,8 @@ var buttonInfo = document.getElementById('moreInfo');
 var features = document.querySelector('.features');
 
 
-buttonCross.forEach(function (btn) {
+buttonCross.forEach(function (btn, i) {
   btn.addEventListener('click', function () {
-    var i = 0;
 
     if (answer[i].classList.contains('faq-list__answer--closed')) {
       answer[i].classList.remove('faq-list__answer--closed');

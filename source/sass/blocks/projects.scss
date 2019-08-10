@@ -74,12 +74,27 @@
 
 .projects-list__item--card {
   padding-top: 20px;
-    padding-bottom: 55px;
-    padding-left: 25px;
-    box-sizing: border-box;
+  padding-bottom: 55px;
+  padding-left: 25px;
+  box-sizing: border-box;
 }
 
 .projects-help >.page-main__wrapper {
   display: flex;
   justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+  .projects-list__item {
+    width: 280px;
+  }
+
+  .projects-help >.page-main__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects-help__mailto {
+    text-align: center;
+  }
 }

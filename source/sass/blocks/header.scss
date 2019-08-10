@@ -5,6 +5,8 @@
   height: 921px;
   color: #ffffff;
   background-color: #3E3E40;
+  background-size: cover;
+  filter: brightness(30%);
 }
 
 .page-header__title {
@@ -24,9 +26,6 @@
 }
 
 .page-header__container {
-  position: absolute;
-  top: 280px;
-  left: 310px;
   margin: 0;
   margin-left: 40px;
   width: 660px;
@@ -42,14 +41,12 @@
   margin-left: auto;
   margin-right: auto;
   padding: 0;
+  padding-top: 285px;
   width: 1200px;
 }
 
-.page-header__photo {
-  margin: 0 auto;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 100%;
-  width: 100%;
-  filter: brightness(30%);
+@media screen and (max-width: 768px) {
+  .page-header {
+    width: 768px;
+  }
 }

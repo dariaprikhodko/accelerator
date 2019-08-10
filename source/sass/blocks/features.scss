@@ -24,3 +24,21 @@
   margin-right: 110px;
   width: 560px;
 }
+
+@media screen and (max-width: 768px) {
+  .features-list {
+    width: 640px;
+  }
+
+  .features-list__title {
+    padding-left: 0
+  }
+
+  .features-list__description {
+    margin-right: 0;
+  }
+
+  .features-list__item {
+    flex-direction: column;
+  }
+}

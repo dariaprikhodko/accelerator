@@ -13,3 +13,9 @@
   padding: 0;
   width: 1200px;
 }
+
+@media screen and (max-width: 768px) {
+  .page-main__wrapper {
+    width: 640px;
+  }
+}
