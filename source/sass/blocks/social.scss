@@ -1,3 +1,28 @@
 .social {
   display: flex;
+  padding-top: 10px;
+  margin: 0;
+  list-style: none;
+}
+
+.social__item {
+  margin-right: 10px;
+
+  &:hover svg,
+  &:focus svg,
+  &:active svg {
+    opacity: 0.3;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .social {
+    padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 320) {
+  .social {
+    padding-left: 10px;
+  }
 }

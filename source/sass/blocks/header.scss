@@ -6,6 +6,7 @@
   color: #ffffff;
   background-color: #3E3E40;
   background-size: cover;
+  background-position: 100%;
   filter: brightness(30%);
 }
 
@@ -27,7 +28,7 @@
 
 .page-header__container {
   margin: 0;
-  margin-left: 40px;
+  margin-left: 30px;
   width: 660px;
 }
 
@@ -48,5 +49,50 @@
 @media screen and (max-width: 768px) {
   .page-header {
     width: 768px;
+    background-image: url("img/main_desktop@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: 768px auto;
+  }
+
+  .page-header__wrapper {
+    width: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 220px;
+  }
+
+  .page-header__container {
+    width: 600px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .page-header {
+    width: 320px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("img/main_desktop@1x.jpg");
+    background-size: 320px auto;
+  }
+
+  .page-header__wrapper {
+    width: 280px;
+    padding-top: 80px;
+  }
+
+  .page-header__description {
+    width: auto;
+    padding-bottom: 30px;
+    font-size: 26px;
+    line-height: 38px;
+  }
+
+  .page-header__container {
+    width: 299px;
+  }
+
+  .page-header__title {
+    padding-bottom: 10px;
   }
 }

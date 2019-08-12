@@ -11,7 +11,7 @@
 
   &:hover {
     background-color: $red;
-    border: 1px solid $red;
+    border: 1px inset $red;
   }
 }
 
@@ -21,12 +21,8 @@
   padding-top: 15px;
   box-sizing: border-box;
   height: 58px;
-  border: 1px solid $blue;
+  border: 1px inset $blue;
   margin-right: 15px;
-}
-
-.button-project {
-  padding-top: 0;
 }
 
 .button-blue {
@@ -34,7 +30,7 @@
 }
 
 .button-white {
-  border: 1px solid #ffffff;
+  border: 1px inset #ffffff;
 }
 
 .button-middle {
@@ -46,7 +42,7 @@
 .button-middle +.button-white {
   margin-left: 4px;
   color: $blue;
-  border: 2px solid $blue;
+  border: 2px inset $blue;
 
   &:hover {
     color: #ffffff;
@@ -84,5 +80,34 @@
   .button-middle +.button-white {
     margin-left: 0;
     margin-top: 8px;
+  }
+
+  .button-cross {
+    left: 570px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .buttons-wrapper {
+    flex-wrap: wrap;
+    width: 280px;
+  }
+
+  .button-big {
+    width: 208px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .button-big {
+    margin-bottom: 10px;
+  }
+
+  .button-middle {
+    width: 240px;
+  }
+
+  .button-cross {
+    left: 240px;
   }
 }

@@ -18,4 +18,26 @@
   .page-main__wrapper {
     width: 640px;
   }
+
+  .page-main__title {
+    margin-bottom: 20px;
+    font-size: 38px;
+    line-height: 47px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .page-main__wrapper {
+    width: 320px;
+  }
+
+  .page-main__title {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: 600px;
+  }
 }

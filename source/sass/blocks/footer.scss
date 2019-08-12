@@ -1,10 +1,11 @@
 .page-footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 45px;
+  padding-bottom: 45px;
   background-color: #000000;
 }
 
 .page-footer__copyright {
+  margin: 0;
   width: 355px;
   color: $light-grey;
   text-align: center;
@@ -20,16 +21,42 @@
   margin-right: auto;
   padding: 0;
   padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
+  padding-right: 20px;
+  box-sizing: border-box;
   width: 1200px;
 }
 
+.page-footer__logo {
+  &:hover {
+    opacity: 0.3;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   .page-footer__wrapper {
     flex-direction: column;
     align-items: center;
     width: 768px;
+  }
+  .page-footer__copyright {
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  .page-footer__logo {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .page-footer__wrapper {
+    width: 320px;
   }
   .page-footer__copyright {
     width: auto;

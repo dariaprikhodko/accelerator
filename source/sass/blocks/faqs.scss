@@ -9,10 +9,14 @@
   margin: 0;
   margin-top: 90px;
   padding-bottom: 90px;
+  padding-left: 20px;
   list-style: none;
 }
 
 .faq-list__title {
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
   color: $blue;
   font-size: 21px;
   font-weight: 600;
@@ -39,11 +43,29 @@
 
 @media screen and (max-width: 768px) {
   .faq-list {
-    width: 640px;
-    padding-left: 0;
+    width: 550px;
+    padding-left: 20px;
+    margin-top: 45px;
+    margin-right: 0;
   }
 
   .faq-list__item {
     width: 550px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .faq-list {
+    align-items: flex-start;
+    width: 280px;
+  }
+
+  .faq-list__item {
+    width: 230px;
+  }
+
+  .faq-list__title {
+    padding-top: 15px;
+    padding-bottom: 14px;
   }
 }
