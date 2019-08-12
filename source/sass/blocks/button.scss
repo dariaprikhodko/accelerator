@@ -79,6 +79,11 @@
     flex-direction: column;
   }
 
+  .buttons-wrapper__main--first,
+  .buttons-wrapper__main--third {
+    margin-top: 50px;
+  }
+
   .button-middle +.button-white {
     margin-left: 0;
     margin-top: 8px;
@@ -93,6 +98,11 @@
   .buttons-wrapper {
     flex-wrap: wrap;
     width: 280px;
+  }
+
+  .buttons-wrapper__main--first,
+  .buttons-wrapper__main--third {
+    margin-top: 18px;
   }
 
   .button-big {

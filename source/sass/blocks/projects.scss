@@ -92,6 +92,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .projects-list {
+    padding-bottom: 90px;
+  }
+
   .projects {
     padding-top: 125px;
   }
@@ -158,5 +162,9 @@
     font-size: 18px;
     line-height: 26px;
     width: 280px;
+  }
+
+  .projects-list__item--card {
+    padding-bottom: 40px;
   }
 }
