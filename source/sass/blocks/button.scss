@@ -60,16 +60,18 @@
   left: 720px;
   appearance: none;
   border: none;
-  background-image: url("../img/cross.svg");
-  fill: #000000;
   background-color: transparent;
-  width: 40px;
-  height: 40px;
+}
 
-  &:hover {
-    border-radius: 50%;
-    background-color: $blue;
-  }
+.button-cross svg {
+  fill: #000000;
+}
+
+.button-cross:hover svg {
+  transform: rotate(45deg);
+  fill: #ffffff;
+  border-radius: 50%;
+  background-color: $blue;
 }
 
 @media screen and (max-width: 768px) {

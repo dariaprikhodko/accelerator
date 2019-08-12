@@ -32,6 +32,7 @@
   width: 120px;
   height: 15px;
   background-image: url("../img/curl1.svg");
+  background-repeat: no-repeat;
 }
 
 .about-info::after {
@@ -43,6 +44,7 @@
   width: 120px;
   height: 15px;
   background-image: url("../img/curl2.svg");
+  background-repeat: no-repeat;
   transform: rotate(180deg);
 }
 

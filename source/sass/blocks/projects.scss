@@ -92,18 +92,22 @@
 }
 
 @media screen and (max-width: 768px) {
+  .projects {
+    padding-top: 125px;
+  }
+
   .projects-list__item--heading {
     font-weight: 600;
   }
 
   .projects-list__item--card {
-    width: 240px;
+    width: 90%;
     padding-left: 15px;
     box-sizing: border-box;
   }
 
   .projects-list__item {
-    width: 280px;
+    max-width: 280px;
   }
 
   .projects-help >.page-main__wrapper {

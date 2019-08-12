@@ -19,7 +19,7 @@
   margin-right: 15px;
   padding-left: 45px;
   padding-bottom: 55px;
-  width: 510px;
+  max-width: 510px;
 }
 
 .problems-list__title {
@@ -45,6 +45,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .problems-list__description {
+    width: 550px;
+  }
+
   .problems {
     padding-bottom: 45px;
   }
@@ -53,6 +57,7 @@
     width: 600px;
     padding-left: 35px;
     padding-bottom: 40px;
+    box-sizing: border-box;
   }
 }
 
