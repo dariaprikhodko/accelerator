@@ -64,12 +64,12 @@
 }
 
 .button-cross svg {
-  fill: #000000;
+  stroke: black;
 }
 
 .button-cross:hover svg {
   transform: rotate(45deg);
-  fill: #ffffff;
+  stroke: red;
   border-radius: 50%;
   background-color: $blue;
 }
