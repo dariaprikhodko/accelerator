@@ -25,7 +25,7 @@
 .faq-list__item {
   position: relative;
   display: block;
-  width: 760px;
+  width: 63%;
   border-top: 1px solid $light-grey;
 }
 
@@ -41,27 +41,26 @@
   visibility: block;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .faq-list {
-    width: 550px;
-    padding-left: 20px;
+    width: 93%;
+    padding: 0;
+    margin: 0;
     margin-top: 45px;
-    margin-right: 0;
   }
 
   .faq-list__item {
-    width: 550px;
+    width: 93%;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
   .faq-list {
     align-items: flex-start;
-    width: 280px;
-  }
-
-  .faq-list__item {
-    width: 230px;
+    width: 87%;
+    margin: 0;
+    margin-top: 45px;
+    padding-left: 20px;
   }
 
   .faq-list__title {

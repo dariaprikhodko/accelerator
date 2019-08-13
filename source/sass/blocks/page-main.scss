@@ -11,10 +11,10 @@
   margin-left: auto;
   margin-right: auto;
   padding: 0;
-  width: 1200px;
+  max-width: 1200px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .page-main__wrapper {
     width: 640px;
   }
@@ -26,7 +26,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
   .page-main__wrapper {
     width: 320px;
   }

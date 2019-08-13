@@ -7,6 +7,7 @@
 .features-list {
   display: flex;
   flex-direction: column;
+  padding-left: 0;
   list-style: none;
 }
 
@@ -26,10 +27,10 @@
 
 .features-list__description {
   margin-right: 110px;
-  width: 560px;
+  width: 46%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .features {
     padding-bottom: 43px;
   }
@@ -62,7 +63,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
   .features {
     padding-bottom: 60px;
   }

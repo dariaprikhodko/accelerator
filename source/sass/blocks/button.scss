@@ -25,6 +25,10 @@
   margin-right: 15px;
 }
 
+.button-project {
+  margin-left: auto;
+}
+
 .button-blue {
   background-color: $blue;
 }
@@ -91,6 +95,10 @@
 
   .button-cross {
     left: 570px;
+  }
+
+  .button-project {
+    margin: 0 auto;
   }
 }
 

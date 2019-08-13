@@ -2,6 +2,7 @@
   display: flex;
   padding-top: 120px;
   padding-bottom: 120px;
+  width: 100%;
   box-sizing: border-box;
   background-color: $light-grey;
   font-size: 32px;
@@ -48,9 +49,9 @@
   transform: rotate(180deg);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .about {
-    width: 768px;
+    width: 100%;
   }
 
   .about-info {
@@ -70,7 +71,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
   .about {
     display: none;
   }

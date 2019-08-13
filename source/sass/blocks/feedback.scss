@@ -54,7 +54,7 @@
   color: #777777;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .feedback-list {
     flex-direction: column;
     padding-left: 0;
@@ -98,7 +98,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 768px) {
   .feedback {
     display: none;
   }

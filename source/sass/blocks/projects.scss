@@ -32,6 +32,7 @@
 
 .projects-help {
   display: flex;
+  width: 100%;
   padding-top: 60px;
   padding-bottom: 45px;
   background-color: $light-grey;
@@ -39,7 +40,7 @@
 
 .projects-help__container {
   box-sizing: border-box;
-  width: 45%;
+  width: 63%;
 }
 
 
@@ -74,12 +75,14 @@
 }
 
 .projects-list__item--text {
+  width: 100%;
   padding-top: 8px;
   padding-bottom: 12px;
 
 }
 
 .projects-list__item--card {
+  width: 100%;
   padding-top: 12px;
   padding-bottom: 55px;
   padding-left: 25px;
@@ -88,10 +91,10 @@
 
 .projects-help >.page-main__wrapper {
   display: flex;
-  justify-content: space-around;
+  max-width: 1200px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .projects-list {
     padding-bottom: 90px;
   }
@@ -131,7 +134,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
   .projects {
     padding-top: 65px;
 
