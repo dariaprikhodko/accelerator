@@ -27,10 +27,11 @@
 }
 
 .button-big {
-  padding-left: 65px;
-  padding-right: 65px;
+  padding-left: 64px;
+  padding-right: 64px;
   box-sizing: border-box;
   height: 58px;
+  min-width: 268px;
   border: 1px solid $blue;
   margin-right: 15px;
 }
@@ -89,6 +90,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .button-participate {
+    margin-bottom: 10px;
+  }
+
   .buttons-wrapper__main {
     flex-direction: column;
   }
