@@ -1,5 +1,6 @@
 .button {
   display: block;
+  font: inherit;
   font-size: 16px;
   font-weight: 700;
   color: #ffffff;
@@ -8,25 +9,35 @@
   vertical-align: middle;
   box-sizing: border-box;
   cursor: pointer;
+  appearance: none;
+  background-color: transparent;
+  border: none;
 
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus, {
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    transition-property: background-color, color, border-color, box-shadow;
+    transition-duration: 0.2s, 0.2s, 0.2s, 0.2s;
+    transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s, 0s, 0s;
     background-color: $red;
-    border: 1px inset $red;
+    border: 1px solid $red;
   }
 }
 
 .button-big {
   padding-left: 65px;
   padding-right: 65px;
-  padding-top: 15px;
   box-sizing: border-box;
   height: 58px;
-  border: 1px inset $blue;
+  border: 1px solid $blue;
   margin-right: 15px;
 }
 
 .button-project {
   margin-left: auto;
+  padding-top: 15px;
 }
 
 .button-blue {
@@ -34,11 +45,10 @@
 }
 
 .button-white {
-  border: 1px inset #ffffff;
+  border: 1px solid #ffffff;
 }
 
 .button-middle {
-  padding-top: 7px;
   width: 182px;
   height: 45px;
 }
@@ -46,7 +56,7 @@
 .button-middle +.button-white {
   margin-left: 4px;
   color: $blue;
-  border: 2px inset $blue;
+  border: 2px solid $blue;
 
   &:hover {
     color: #ffffff;

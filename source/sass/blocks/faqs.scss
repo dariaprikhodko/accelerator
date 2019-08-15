@@ -33,6 +33,11 @@
   border-bottom: 1px solid $light-grey;
 }
 
+.faq-list__answer {
+  margin: 0;
+  padding: 0;
+}
+
 .faq-list__answer--closed {
   display: none;
 }

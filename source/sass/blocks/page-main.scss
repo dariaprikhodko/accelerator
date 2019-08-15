@@ -3,6 +3,8 @@
   margin-bottom: 70px;
   color: $blue;
   font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
   line-height: 52px;
   text-align: center;
 }
@@ -16,7 +18,7 @@
 
 @media screen and (max-width: 1023px) {
   .page-main__wrapper {
-    width: 640px;
+    max-width: 640px;
   }
 
   .page-main__title {
@@ -28,7 +30,7 @@
 
 @media screen and (max-width: 767px) {
   .page-main__wrapper {
-    width: 320px;
+    max-width: 320px;
   }
 
   .page-main__title {
@@ -38,6 +40,5 @@
     text-align: center;
     font-size: 30px;
     line-height: 37px;
-    font-weight: 600px;
   }
 }

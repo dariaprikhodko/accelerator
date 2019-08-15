@@ -6,37 +6,37 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Акселератор HTML Academy</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="page-header" style="background-image: url('img/main_desktop.jpg')">
     <div class="page-header__wrapper">
-        <article class="page-header__container">
+        <section class="page-header__container">
           <h1 class="page-header__title">Акселератор HTML Academy</h1>
           <p class="page-header__description">
             Прокачиваем разработчиков до коммерческого уровня,
             работаем над скоростью и качеством выполняемой вами работы.
           </p>
           <div class="buttons-wrapper">
-            <a class="button button-big button-blue" id="participate">Принять участие</a>
-            <a class="button button-big button-white" id="moreInfo">Узнать подробнее</a>
+            <button class="button button-big button-blue" id="participate">Принять участие</button>
+            <button class="button button-big button-white" id="moreInfo">Узнать подробнее</button>
           </div>
-        </article>
+        </section>
     </div>
   </header>
 
   <main class="page-main">
-    <article class="about">
+    <section class="about">
       <div class="page-main__wrapper">
-        <p class="about-info">
+        <p class="about__info">
           Совместный проект <a href="https://htmlacademy.ru/" target="blank">HTML Academy</a>
           и  <a href="https://liga-a.ru/" target="blank">Лиги А.</a> предоставляет тебе возможность
           получить практический опыт и сравнить навыки с рыночными показателями.
         </p>
       </div>
-    </article>
+    </section>
 
-    <article class="problems">
+    <section class="problems">
       <div class="page-main__wrapper">
         <h2 class="page-main__title">Какие проблемы мы поможем решить</h2>
         <ul class="problems-list">
@@ -70,52 +70,52 @@
           </li>
         </ul>
       </div>
-    </article>
+    </section>
 
-    <article class="features">
+    <section class="features">
       <div class="page-main__wrapper">
         <h2 class="page-main__title">Что тебя ждёт в акселераторе</h2>
         <ul class="features-list">
           <li class="features-list__item">
             <h3 class="features-list__title">Работа в команде</h3>
-            <p class="features-list__description text">
+            <p class="features-list__description">
                 Реальный процесс разработки проектов коммерческого уровня в команде с
                 менеджером и тестировщиком, а иногда и с другими разработчиками.
             </p>
           </li>
           <li class="features-list__item">
             <h3 class="features-list__title">Атмосфера</h3>
-            <p class="features-list__description text">
+            <p class="features-list__description">
                 Позволяет учиться в спокойном режиме с поддержкой. Команда ребят
                 готова помогать и отвечать на любые твои вопросы.
             </p>
           </li>
           <li class="features-list__item">
             <h3 class="features-list__title">Ревью кода</h3>
-            <p class="features-list__description text">
+            <p class="features-list__description">
                 Выполняя проект, твой личный наставник проверяет качество работы,
                 делится опытом и рассказывает, как можно сделать лучше.
             </p>
           </li>
           <li class="features-list__item">
             <h3 class="features-list__title">Портфолио</h3>
-            <p class="features-list__description text">
+            <p class="features-list__description">
                 Мы заказываем проекты у дизайнеров с рынка. Чтобы ты мог попробовать себя и
                 собрать портфолио из настоящих проектов, таких же по сложности, как в индустрии.
             </p>
           </li>
           <li class="features-list__item">
             <h3 class="features-list__title">Оценка проектов</h3>
-            <p class="features-list__description text">
+            <p class="features-list__description">
                 У нас есть эталонная вёрстка всех проектов и время затраченное на её разработку.
                 В конце мы сравниваем твои показатели с рыночными и даём рекомендации по улучшению.
             </p>
           </li>
         </ul>
       </div>
-    </article>
+    </section>
 
-    <article class="feedback">
+    <section class="feedback">
       <div class="page-main__wrapper">
         <h2 class="page-main__title">Отзывы участников</h2>
         <ul class="feedback-list">
@@ -148,21 +148,21 @@
           </li>
         </ul>
       </div>
-    </article>
+    </section>
 
-    <article class="projects">
+    <section class="projects">
       <div class="page-main__wrapper">
         <h2 class="page-main__title">Выбери проект</h2>
-        <p class="projects-description">
+        <p class="projects__description">
             Стажировка проходит на проектной основе.
             Выбери&nbsp;проект, оплати и приступай к работе!
         </p>
         <ul class="projects-list">
           <li class="projects-list__item">
             <a href="https://htmlacademy.ru/payment/liga#payment-easy" target="blank">
-              <picture>
+              <picture class="projects-list__item projects-list__item--img">
                 <source media="(min-width: 1200px)" srcset="img/monstroy_desktop.jpg">
-                <img srcset="img/mont_stroy@1x.jpg" width="560" height="200" alt="Проект МонтСтрой">
+                <img srcset="img/mont_stroy@1x.jpg" alt="Проект МонтСтрой">
               </picture>
             </a>
             <div class="projects-list__item projects-list__item--card">
@@ -176,17 +176,19 @@
               </div>
               <p class="projects-list__item projects-list__item--price">6900 р.</p>
               <div class="buttons-wrapper buttons-wrapper__main buttons-wrapper__main--first">
-                <a href="https://htmlacademy.ru/payment/liga#payment-easy" class="button button-middle button-blue">Хочу попробовать</a>
-                <a href="" class="button button-middle button-white">Превью макетов</a>
+                <button type="button" href="https://htmlacademy.ru/payment/liga#payment-easy" class="button button-middle button-blue">
+                  Хочу попробовать
+                </button>
+                <button type="button" href="" class="button button-middle button-white">Превью макетов</button>
               </div>
             </div>
           </li>
 
           <li class="projects-list__item">
             <a href="https://htmlacademy.ru/payment/liga#payment-easy" target="blank">
-              <picture>
+              <picture class="projects-list__item projects-list__item--img">
                 <source media="(min-width: 1200px)" srcset="img/smartdevice_desktop.jpg">
-                <img srcset="img/smart_device@1x.jpg" width="560" height="200" alt="Проект Smart Device">
+                <img srcset="img/smart_device@1x.jpg" alt="Проект Smart Device">
               </picture>
             </a>
             <div class="projects-list__item projects-list__item--card">
@@ -200,17 +202,19 @@
               </div>
               <p class="projects-list__item projects-list__item--price">6900 р.</p>
               <div class="buttons-wrapper buttons-wrapper__main">
-                <a href="https://htmlacademy.ru/payment/liga#payment-easy" class="button button-middle button-blue">Хочу попробовать</a>
-                <a href="" class="button button-middle button-white">Превью макетов</a>
+                <button type="button" href="https://htmlacademy.ru/payment/liga#payment-easy" class="button button-middle button-blue">
+                  Хочу попробовать
+                </button>
+                <button type="button" href="" class="button button-middle button-white">Превью макетов</button>
               </div>
             </div>
           </li>
 
           <li class="projects-list__item">
             <a href="https://htmlacademy.ru/payment/liga#payment-medium" target="blank">
-              <picture>
+              <picture class="projects-list__item projects-list__item--img">
                 <source media="(min-width: 1200px)" srcset="img/bikeshop_desktop.jpg">
-                <img srcset="img/bikershop@1x.jpg" width="560" height="200" alt="Проект BikeShop">
+                <img srcset="img/bikershop@1x.jpg" alt="Проект BikeShop">
               </picture>
             </a>
             <div class="projects-list__item projects-list__item--card">
@@ -224,17 +228,19 @@
               </div>
               <p class="projects-list__item projects-list__item--price">11500 р.</p>
               <div class="buttons-wrapper buttons-wrapper__main buttons-wrapper__main--third">
-                <a href="https://htmlacademy.ru/payment/liga#payment-medium" class="button button-middle button-blue">Хочу попробовать</a>
-                <a href="" class="button button-middle button-white">Превью макетов</a>
+                <button type="button" href="https://htmlacademy.ru/payment/liga#payment-medium" class="button button-middle button-blue">
+                  Хочу попробовать
+                </button>
+                <button type="button" href="" class="button button-middle button-white">Превью макетов</button>
               </div>
             </div>
           </li>
 
           <li class="projects-list__item">
             <a href="https://htmlacademy.ru/payment/liga#payment-medium" target="blank">
-              <picture>
+              <picture class="projects-list__item projects-list__item--img">
                 <source media="(min-width: 1200px)" srcset="img/escape_desktop.jpg">
-                <img srcset="img/escape@1x.jpg" width="560" height="200" alt="Проект Escape Room">
+                <img srcset="img/escape@1x.jpg" alt="Проект Escape Room">
               </picture>
             </a>
             <div class="projects-list__item projects-list__item--card">
@@ -248,8 +254,10 @@
               </div>
               <p class="projects-list__item projects-list__item--price">11500 р.</p>
               <div class="buttons-wrapper buttons-wrapper__main">
-                  <a href="https://htmlacademy.ru/payment/liga#payment-medium" class="button button-middle button-blue">Хочу попробовать</a>
-                  <a href="" class="button button-middle button-white">Превью макетов</a>
+                  <button type="button" href="https://htmlacademy.ru/payment/liga#payment-medium" class="button button-middle button-blue">
+                    Хочу попробовать
+                  </button>
+                  <button type="button" href="" class="button button-middle button-white">Превью макетов</button>
               </div>
             </div>
           </li>
@@ -266,9 +274,9 @@
             <a href="mailto:mail@liga-a.ru" class="button button-big button-blue button-project">Подобрать проект</a>
         </div>
       </div>
-    </article>
+    </section>
 
-    <article class="faqs">
+    <section class="faqs">
       <div class="page-main__wrapper">
         <h2 class="page-main__title">FAQ</h2>
         <ul class="faq-list" id="faqlist">
@@ -320,7 +328,7 @@
           <li class="faq-list__item">
               <h4 class="faq-list__title">Я пока ничего не умею, но хочу научиться. Можно?</h4>
               <button type="button" class="button-cross">
-                <svg width="40" height="40"><use xlink:href="img/sprite.svg#cross"></use></svg>
+                <svg width="40" height="40"><use xlink:href="img/sprite.svg#icon-cross"></use></svg>
                 <span class="visually-hidden">menu toggle</span>
               </button>
               <p class="faq-list__answer faq-list__answer--closed">
@@ -341,7 +349,7 @@
           </li>
         </ul>
       </div>
-    </article>
+    </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">

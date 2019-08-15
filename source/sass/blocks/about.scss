@@ -11,20 +11,31 @@
   a {
     color: $blue;
     text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus, {
+      transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      transition-property: background-color, color, border-color, box-shadow;
+      transition-duration: 0.2s, 0.2s, 0.2s, 0.2s;
+      transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+      transition-delay: 0s, 0s, 0s, 0s;
+      color: $red;      
+    }
   }
 }
 
-.about-info {
+.about__info {
   position: relative;
   display: block;
   margin: 0 auto;
   margin-top: 60px;
   margin-bottom: 68px;
-  width: 960px;
+  max-width: 960px;
   text-align: center;
 }
 
-.about-info::before {
+.about__info::before {
   content: "";
   display: block;
   position: absolute;
@@ -36,7 +47,7 @@
   background-repeat: no-repeat;
 }
 
-.about-info::after {
+.about__info::after {
   content: "";
   display: block;
   position: absolute;
@@ -54,18 +65,18 @@
     width: 100%;
   }
 
-  .about-info {
-    width: 600px;
+  .about__info {
+    max-width: 600px;
     margin-top: 40px;
     margin-bottom: 48px;
   }
 
-  .about-info::before {
+  .about__info::before {
     left: 240px;
     top: -45px;
   }
 
-  .about-info::after {
+  .about__info::after {
     left: 240px;
     top: 270px;
   }
