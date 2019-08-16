@@ -5,18 +5,14 @@
 .feedback-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   list-style: none;
 }
 
 .feedback-list__item {
-  margin-left: 20px;
   margin-right: 20px;
   width: 30%;
   box-sizing: border-box;
-
-  &:first-child {
-    margin-left: 0;
-  }
 }
 
 .feedback-list__text {

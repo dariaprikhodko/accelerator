@@ -17,7 +17,7 @@
   &:active,
   &:focus, {
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    transition-property: background-color, color, border-color, box-shadow;
+    transition: background-color, color, border-color, box-shadow;
     transition-duration: 0.2s, 0.2s, 0.2s, 0.2s;
     transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
     transition-delay: 0s, 0s, 0s, 0s;
@@ -27,8 +27,8 @@
 }
 
 .button-big {
-  padding-left: 64px;
-  padding-right: 64px;
+  padding-left: 62px;
+  padding-right: 62px;
   box-sizing: border-box;
   height: 58px;
   min-width: 268px;
@@ -73,20 +73,11 @@
   position: absolute;
   top: 30px;
   left: 720px;
+  width: 24px;
+  height: 24px;
   appearance: none;
   border: none;
   background-color: transparent;
-}
-
-.button-cross svg {
-  stroke: #000000;
-}
-
-.button-cross:hover svg {
-  transform: rotate(45deg);
-  stroke: red;
-  border-radius: 50%;
-  background-color: $blue;
 }
 
 @media screen and (max-width: 768px) {

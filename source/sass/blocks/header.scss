@@ -61,7 +61,7 @@
 
 @media screen and (max-width: 1023px) {
   .page-header {
-    height: 100vh;
+    height: 700px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -81,6 +81,7 @@
 
 @media screen and (max-width: 767px) {
   .page-header {
+    height: 730px;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("img/main_desktop@1x.jpg");
@@ -90,6 +91,7 @@
 
   .page-header__wrapper {
     max-width: 280px;
+    padding: 0;
     padding-top: 80px;
   }
 
@@ -106,5 +108,6 @@
 
   .page-header__title {
     padding-bottom: 10px;
+    line-height: 30px;
   }
 }

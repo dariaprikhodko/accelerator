@@ -3,7 +3,7 @@
 var buttonCross = document.querySelectorAll('.button-cross');
 var answer = document.querySelectorAll('.faq-list__answer');
 var buttonTakePart = document.getElementById('participate');
-var projects = document.querySelector('.projects');
+var projects = document.querySelector('.projects__title');
 var buttonInfo = document.getElementById('moreInfo');
 var features = document.querySelector('.features');
 
@@ -23,11 +23,11 @@ buttonCross.forEach(function (btn, i) {
 
 
 function handleGoToProjects() {
-  projects.scrollIntoView({block: 'center', behavior: 'smooth'});
+  projects.scrollIntoView({block: 'start', behavior: 'smooth'});
 }
 buttonTakePart.addEventListener('click', handleGoToProjects);
 
 function handleGoToFeatures() {
-  features.scrollIntoView({block: 'center', behavior: 'smooth'});
+  features.scrollIntoView({block: 'start', behavior: 'smooth'});
 }
 buttonInfo.addEventListener('click', handleGoToFeatures);
