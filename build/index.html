@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Акселератор HTML Academy</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css">
+  <script src="js/tiny-slider.js"></script>
 </head>
 <body>
   <header class="page-header" style="background-image: url('img/main_desktop.jpg')">
@@ -166,7 +167,7 @@
                 <img srcset="img/mont_stroy@1x.jpg" alt="Проект МонтСтрой">
               </picture>
             </a>
-            <div class="projects-list__item projects-list__item--card">
+            <div class="projects-list__item projects-list__description">
               <a class="projects-list__item projects-list__item--heading" href="https://htmlacademy.ru/payment/liga#payment-easy" target="blank">
                 Проект МонтСтрой
               </a>
@@ -177,10 +178,10 @@
               </div>
               <p class="projects-list__item projects-list__item--price">6900 р.</p>
               <div class="buttons-wrapper buttons-wrapper__main buttons-wrapper__main--first">
-                <button type="button" onclick="window.location='https://htmlacademy.ru/payment/liga#payment-easy'" class="button button-middle button-blue">
+                <a href="https://htmlacademy.ru/payment/liga#payment-easy" target="blank" class="button button-middle button-blue button-pay">
                   Хочу попробовать
-                </button>
-                <button type="button" href="" class="button button-middle button-white">Превью макетов</button>
+                </a>
+                <button type="button" class="button button-middle button-white">Превью макетов</button>
               </div>
             </div>
           </li>
@@ -192,7 +193,7 @@
                 <img srcset="img/smart_device@1x.jpg" alt="Проект Smart Device">
               </picture>
             </a>
-            <div class="projects-list__item projects-list__item--card">
+            <div class="projects-list__item projects-list__description">
               <a class="projects-list__item projects-list__item--heading" href="https://htmlacademy.ru/payment/liga#payment-easy" target="blank">
                   Проект Smart Device
               </a>
@@ -203,10 +204,10 @@
               </div>
               <p class="projects-list__item projects-list__item--price">6900 р.</p>
               <div class="buttons-wrapper buttons-wrapper__main">
-                <button type="button" onclick="window.location='https://htmlacademy.ru/payment/liga#payment-easy'" class="button button-middle button-blue">
+                <a href="https://htmlacademy.ru/payment/liga#payment-easy" target="blank" class="button button-middle button-blue button-pay">
                   Хочу попробовать
-                </button>
-                <button type="button" href="" class="button button-middle button-white">Превью макетов</button>
+                </a>
+                <button type="button" class="button button-middle button-white">Превью макетов</button>
               </div>
             </div>
           </li>
@@ -218,7 +219,7 @@
                 <img srcset="img/bikershop@1x.jpg" alt="Проект BikeShop">
               </picture>
             </a>
-            <div class="projects-list__item projects-list__item--card">
+            <div class="projects-list__item projects-list__description">
               <a class="projects-list__item projects-list__item--heading" href="https://htmlacademy.ru/payment/liga#payment-medium" target="blank">
                 Проект BikeShop
               </a>
@@ -229,10 +230,10 @@
               </div>
               <p class="projects-list__item projects-list__item--price">11500 р.</p>
               <div class="buttons-wrapper buttons-wrapper__main buttons-wrapper__main--third">
-                <button type="button" onclick="window.location='https://htmlacademy.ru/payment/liga#payment-medium'" class="button button-middle button-blue">
+                <a href="https://htmlacademy.ru/payment/liga#payment-medium" target="blank" class="button button-middle button-blue button-pay">
                   Хочу попробовать
-                </button>
-                <button type="button" href="" class="button button-middle button-white">Превью макетов</button>
+                </a>
+                <button type="button" class="button button-middle button-white">Превью макетов</button>
               </div>
             </div>
           </li>
@@ -244,7 +245,7 @@
                 <img srcset="img/escape@1x.jpg" alt="Проект Escape Room">
               </picture>
             </a>
-            <div class="projects-list__item projects-list__item--card">
+            <div class="projects-list__item projects-list__description">
               <a class="projects-list__item projects-list__item--heading" href="https://htmlacademy.ru/payment/liga#payment-medium" target="blank">
                 Проект Escape Room
               </a>
@@ -255,10 +256,10 @@
               </div>
               <p class="projects-list__item projects-list__item--price">11500 р.</p>
               <div class="buttons-wrapper buttons-wrapper__main">
-                  <button type="button" onclick="window.location='https://htmlacademy.ru/payment/liga#payment-medium'" class="button button-middle button-blue">
+                  <a href="https://htmlacademy.ru/payment/liga#payment-medium" target="blank" class="button button-middle button-blue button-pay">
                     Хочу попробовать
-                  </button>
-                  <button type="button" href="" class="button button-middle button-white">Превью макетов</button>
+                  </a>
+                  <button type="button" class="button button-middle button-white">Превью макетов</button>
               </div>
             </div>
           </li>
@@ -284,7 +285,6 @@
           <li class="faq-list__item">
             <h4 class="faq-list__title">Что надо для попадания на стажировку?</h4>
             <button type="button" class="button-cross">
-              <svg width="24" height="24"><use xlink:href="img/sprite.svg#icon-cross-black"></use></svg>
               <span class="visually-hidden">menu toggle</span>
             </button>
             <p class="faq-list__answer faq-list__answer--closed">
@@ -295,7 +295,6 @@
           <li class="faq-list__item">
             <h4 class="faq-list__title">Почему я должен платить за стажировку?</h4>
             <button type="button" class="button-cross">
-              <svg width="24" height="24"><use xlink:href="img/sprite.svg#icon-cross-black"></use></svg>
               <span class="visually-hidden">menu toggle</span>
             </button>
             <p class="faq-list__answer faq-list__answer--closed">
@@ -307,7 +306,6 @@
           <li class="faq-list__item">
             <h4 class="faq-list__title">Сколько надо сверстать проектов, чтобы успешно закончить?</h4>
             <button type="button" class="button-cross">
-              <svg width="24" height="24"><use xlink:href="img/sprite.svg#icon-cross-black"></use></svg>
               <span class="visually-hidden">menu toggle</span>
             </button>
             <p class="faq-list__answer faq-list__answer--closed">
@@ -318,7 +316,6 @@
           <li class="faq-list__item">
             <h4 class="faq-list__title">Смогу ли я совмещать стажировку с учёбой или работой?</h4>
             <button type="button" class="button-cross">
-              <svg width="24" height="24"><use xlink:href="img/sprite.svg#icon-cross-black"></use></svg>
               <span class="visually-hidden">menu toggle</span>
             </button>
             <p class="faq-list__answer faq-list__answer--closed">
@@ -329,7 +326,6 @@
           <li class="faq-list__item">
               <h4 class="faq-list__title">Я пока ничего не умею, но хочу научиться. Можно?</h4>
               <button type="button" class="button-cross">
-                <svg width="24" height="24"><use xlink:href="img/sprite.svg#icon-cross-black"></use></svg>
                 <span class="visually-hidden">menu toggle</span>
               </button>
               <p class="faq-list__answer faq-list__answer--closed">
@@ -341,7 +337,6 @@
           <li class="faq-list__item">
             <h4 class="faq-list__title">Будет ли выдан документ об окончании стажировки?</h4>
             <button type="button" class="button-cross">
-              <svg width="24" height="24"><use xlink:href="img/sprite.svg#icon-cross-black"></use></svg>
               <span class="visually-hidden">menu toggle</span>
             </button>
             <p class="faq-list__answer faq-list__answer--closed">
@@ -393,7 +388,7 @@
       <button class="slider-button button-close">
         <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1" fill="#2c39f2" fill-rule="evenodd"> <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> </g> </svg>
       </button>
-      <div id="customize-controls" class="slider__controls">
+      <div class="slider__controls">
         <button class="slider-button button-prev"></button>
         <button class="slider-button button-next"></button>
       </div>
@@ -403,13 +398,13 @@
             <li class="slider-list__item">
               <img class="slider__photo" src="img/1_montstroy.jpg" alt="Превью макетов">
             </li>
-            <li class="slider-list__item visually-hidden">
+            <li class="slider-list__item">
               <img src="img/2_montstroy.jpg" alt="Превью макетов">
             </li>
-            <li class="slider-list__item visually-hidden">
+            <li class="slider-list__item">
               <img src="img/3_montstroy.jpg" alt="Превью макетов">
             </li>
-            <li class="slider-list__item visually-hidden">
+            <li class="slider-list__item">
               <img src="img/4_montstroy.jpg" alt="Превью макетов">
             </li>
           </ul>
@@ -435,7 +430,7 @@
             <p class="slider__description--info slider__description--level">Уровень ⭐️</p>
             <p class="slider__description--info">Для кого:</p>
             <p class="slider__description--info slider__description--graduates">Выпускники I уровня вёрстки.</p>
-            <p class="slider__description--info">Описание пректа:</p>
+            <p class="slider__description--info">Описание проекта:</p>
             <p class="slider__description--info">&mdash; посадочная страница</p>
             <p class="slider__description--info">&mdash; адаптивность по желанию, без JavaScript</p>
           </div>
@@ -450,7 +445,7 @@
       <button class="slider-button button-close">
         <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1" fill="#2c39f2" fill-rule="evenodd"> <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> </g> </svg>
       </button>
-      <div id="customize-controls" class="slider__controls">
+      <div class="slider__controls">
         <button class="slider-button button-prev"></button>
         <button class="slider-button button-next"></button>
       </div>
@@ -486,7 +481,7 @@
             <p class="slider__description--info slider__description--level">Уровень ⭐️</p>
             <p class="slider__description--info">Для кого:</p>
             <p class="slider__description--info slider__description--graduates">Выпускники I уровня вёрстки.</p>
-            <p class="slider__description--info">Описание пректа:</p>
+            <p class="slider__description--info">Описание проекта:</p>
             <p class="slider__description--info">&mdash; посадочная страница</p>
             <p class="slider__description--info">&mdash; адаптивность по желанию, без JavaScript</p>
           </div>
@@ -501,7 +496,7 @@
       <button class="slider-button button-close">
         <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1" fill="#2c39f2" fill-rule="evenodd"> <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> </g> </svg>
       </button>
-      <div id="customize-controls" class="slider__controls">
+      <div class="slider__controls">
         <button class="slider-button button-prev"></button>
         <button class="slider-button button-next"></button>
       </div>
@@ -543,7 +538,7 @@
             <p class="slider__description--info slider__description--level">Уровень ⭐️⭐️</p>
             <p class="slider__description--info">Для кого:</p>
             <p class="slider__description--info slider__description--graduates">Выпускники II уровня вёрстки.</p>
-            <p class="slider__description--info">Описание пректа:</p>
+            <p class="slider__description--info">Описание проекта:</p>
             <p class="slider__description--info">&mdash; интернет-магазин, 2 страницы, фильтры, бегунки, слайдеры</p>
             <p class="slider__description--info">&mdash; 3 разрешения, использование JavaScript</p>
           </div>
@@ -558,7 +553,7 @@
       <button class="slider-button button-close">
         <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1" fill="#2c39f2" fill-rule="evenodd"> <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> </g> </svg>
       </button>
-      <div id="customize-controls" class="slider__controls">
+      <div class="slider__controls">
         <button class="slider-button button-prev"></button>
         <button class="slider-button button-next"></button>
       </div>
@@ -600,7 +595,7 @@
             <p class="slider__description--info slider__description--level">Уровень ⭐️⭐️</p>
             <p class="slider__description--info">Для кого:</p>
             <p class="slider__description--info slider__description--graduates">Выпускники II уровня вёрстки.</p>
-            <p class="slider__description--info">Описание пректа:</p>
+            <p class="slider__description--info">Описание проекта:</p>
             <p class="slider__description--info">&mdash; промо-магазин, 4 страницы, расписание, формы, модальные окна</p>
             <p class="slider__description--info">&mdash; 3 разрешения, использование JavaScript</p>
           </div>
@@ -609,6 +604,5 @@
     </div>
   </div>
   <script src="js/script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
 </body>
 </html>

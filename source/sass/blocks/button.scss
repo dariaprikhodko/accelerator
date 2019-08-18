@@ -69,18 +69,39 @@
   margin-top: 18px;
 }
 
+.button-pay {
+  padding-top: 7px;
+}
+
 .button-cross {
   position: absolute;
   top: 30px;
-  left: 720px;
+  right: 10px;
   width: 24px;
   height: 24px;
   appearance: none;
   border: none;
   background-color: transparent;
+  background-position: center;
+  background-image: url("../img/icon-cross-black.svg");
+  background-repeat: no-repeat;
+
+  &:hover {
+    background-image: url("../img/icon-cross.svg");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $blue;
+  }
+
+  &:active,
+  &:focus {
+    transform: rotate(45deg);
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .button-participate {
     margin-bottom: 10px;
   }
@@ -91,7 +112,7 @@
 
   .buttons-wrapper__main--first,
   .buttons-wrapper__main--third {
-    margin-top: 50px;
+    margin-top: 75px;
   }
 
   .button-middle +.button-white {
@@ -99,16 +120,16 @@
     margin-top: 8px;
   }
 
-  .button-cross {
-    left: 570px;
-  }
-
   .button-project {
     margin: 0 auto;
   }
+
+  .button-cross {
+    right: -35px;
+  }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
   .buttons-wrapper {
     flex-wrap: wrap;
   }
@@ -130,9 +151,5 @@
 
   .button-middle {
     width: 240px;
-  }
-
-  .button-cross {
-    left: 240px;
   }
 }
