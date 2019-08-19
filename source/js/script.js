@@ -31,3 +31,18 @@ function handleGoToFeatures() {
   features.scrollIntoView({block: 'start', behavior: 'smooth'});
 }
 buttonInfo.addEventListener('click', handleGoToFeatures);
+
+(function () {
+  tns({
+    'container': '#customize',
+    'items': 4,
+    'controlsContainer': '#customize-controls',
+    'navContainer': '#customize-thumbnails',
+    'navAsThumbnails': true,
+    'autoplay': true,
+    'autoplayTimeout': 1000,
+    'autoplayButton': '#customize-toggle',
+    'swipeAngle': false,
+    'speed': 400
+  });
+})();

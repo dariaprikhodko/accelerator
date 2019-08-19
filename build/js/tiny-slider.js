@@ -489,10 +489,10 @@ function jsTransform(element, attr, prefix, postfix, to, duration, callback) {
 
 var tns = function(options) {
   options = extend({
-    container: '.slider-list',
+    container: '.slider',
     mode: 'carousel',
     axis: 'horizontal',
-    items: 4,
+    items: 1,
     gutter: 0,
     edgePadding: 0,
     fixedWidth: false,
@@ -504,12 +504,12 @@ var tns = function(options) {
     controlsPosition: 'top',
     controlsText: ['prev', 'next'],
     controlsContainer: false,
-    prevButton: true,
-    nextButton: true,
+    prevButton: false,
+    nextButton: false,
     nav: true,
     navPosition: 'top',
     navContainer: false,
-    navAsThumbnails: true,
+    navAsThumbnails: false,
     arrowKeys: false,
     speed: 300,
     autoplay: false,
