@@ -21,6 +21,11 @@ buttonCross.forEach(function (btn, i) {
   });
 });
 
+// buttonCross.forEach(function (btn, i) {
+//   btn.addEventListener('click', function () {
+//     btn[i].classList.toggle('rotate');
+//   });
+// });
 
 function handleGoToProjects() {
   projects.scrollIntoView({block: 'start', behavior: 'smooth'});
