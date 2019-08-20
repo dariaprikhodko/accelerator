@@ -180,7 +180,7 @@
                 <a href="https://htmlacademy.ru/payment/liga#payment-easy" target="blank" class="button button-middle button-blue button-pay">
                   Хочу попробовать
                 </a>
-                <button type="button" class="button button-middle button-white">Превью макетов</button>
+                <button type="button" id="montstroy" class="button button-middle button-white button-preview">Превью макетов</button>
               </div>
             </div>
           </li>
@@ -207,7 +207,7 @@
                 <a href="https://htmlacademy.ru/payment/liga#payment-easy" target="blank" class="button button-middle button-blue button-pay">
                   Хочу попробовать
                 </a>
-                <button type="button" class="button button-middle button-white">Превью макетов</button>
+                <button type="button" id="smart-device" class="button button-middle button-white button-preview">Превью макетов</button>
               </div>
             </div>
           </li>
@@ -234,7 +234,7 @@
                 <a href="https://htmlacademy.ru/payment/liga#payment-medium" target="blank" class="button button-middle button-blue button-pay">
                   Хочу попробовать
                 </a>
-                <button type="button" class="button button-middle button-white">Превью макетов</button>
+                <button type="button" id="bikeshop" class="button button-middle button-white button-preview">Превью макетов</button>
               </div>
             </div>
           </li>
@@ -261,7 +261,7 @@
                   <a href="https://htmlacademy.ru/payment/liga#payment-medium" target="blank" class="button button-middle button-blue button-pay">
                     Хочу попробовать
                   </a>
-                  <button type="button" class="button button-middle button-white">Превью макетов</button>
+                  <button type="button" id="escapeRoom" class="button button-middle button-white button-preview">Превью макетов</button>
               </div>
             </div>
           </li>
@@ -384,7 +384,7 @@
     </div>
   </footer>
 
-  <div class="slider-wrapper">
+  <div id="montstroy-slider" class="slider-wrapper visually-hidden fixed-overlay">
     <div class="slider-whole-wrap">
       <div class="swiper-container  gallery-top">
         <div class="swiper-wrapper">
@@ -417,7 +417,7 @@
     </div>
   </div>
 
-  <div class="slider-wrapper">
+  <div id="smart-slider" class="slider-wrapper visually-hidden fixed-overlay">
     <div class="slider-whole-wrap">
       <div class="swiper-container  gallery-top">
         <div class="swiper-wrapper">
@@ -448,7 +448,7 @@
     </div>
   </div>
 
-  <div class="slider-wrapper">
+  <div id="bike-slider" class="slider-wrapper visually-hidden fixed-overlay">
     <div class="slider-whole-wrap">
       <div class="swiper-container  gallery-top">
         <div class="swiper-wrapper">
@@ -481,7 +481,7 @@
     </div>
   </div>
 
-<div class="slider-wrapper">
+<div id="escape-slider" class="slider-wrapper visually-hidden fixed-overlay">
   <div class="slider-whole-wrap">
     <div class="swiper-container  gallery-top">
       <div class="swiper-wrapper">
@@ -528,11 +528,12 @@
   var thumbs = document.querySelectorAll('.gallery-thumbs__thumb');
   thumbs.forEach(function (el, i) {
     el.addEventListener('click', function () {
-      // mySwiper.slideTo(i, 500);
-      mySwiper[0].slideTo(i, 500);
+      mySwiper[i].slideTo(i, 500);
     });
   });
 })();
+
+
 </script>
 <script src="js/script.js"></script>
 </body>
