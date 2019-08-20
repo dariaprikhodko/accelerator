@@ -93,18 +93,12 @@
     border-radius: 50%;
     background-color: $blue;
   }
-
-  &:active,
-  &:focus {
-    transform: rotate(-45deg);
-    transition: ease-in-out .2s;
-  }
 }
 
-// .rotate {
-//     transform: rotate(-45deg);
-//     transition: ease-in-out .2s;
-// }
+.rotate {
+  transform: rotate(-45deg);
+  transition: ease-in-out .2s;
+}
 
 @media screen and (max-width: 1023px) {
   .button-participate {
