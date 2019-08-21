@@ -8,9 +8,6 @@
   var buttonInfo = document.getElementById('moreInfo');
   var features = document.querySelector('.features');
   var buttonsModal = document.querySelectorAll('.js-call-modal');
-  var slider = document.querySelectorAll('.slider-wrapper');
-  var buttonClose = document.querySelector('.button-close');
-  var buttonBack = document.querySelector('.button-back');
 
   buttonCross.forEach(function (btn, i) {
     btn.addEventListener('click', function () {
@@ -43,6 +40,20 @@
       if (modalId.classList.contains('visually-hidden')) {
         modalId.classList.remove('visually-hidden');
       }
+      var buttonClose = modalId.querySelector('.button-close');
+      function byClose() {
+        modalId.classList.add('visually-hidden');
+      }
+      buttonClose.addEventListener('click', byClose);
+      buttonClose.removeEventListener('click', byClose);
+
+      var buttonBack = modalId.querySelector('.button-back');
+      buttonBack.addEventListener('click', byClose);
+      buttonBack.removeEventListener('click', byClose);
+
+      if (event.keyCode === 27) {
+        document.addEventListener('keydown', byClose);
+      }
     });
   });
 
@@ -53,22 +64,15 @@
     });
   });
 
-  buttonClose.addEventListener('click', function () {
-    slider.remove();
-    document.removeEventListener('keydown', onPopupEscapePress);
-  });
-  document.addEventListener('keydown', onPopupEscapePress);
 
-  buttonBack.addEventListener('click', function () {
-    slider.remove();
-    document.removeEventListener('keydown', onPopupEscapePress);
-  });
-  document.addEventListener('keydown', onPopupEscapePress);
+  // buttonClose.addEventListener('click', function () {
+  //   slider.remove();
+  //   document.removeEventListener('keydown', onPopupEscapePress);
+  // });
+  // document.addEventListener('keydown', onPopupEscapePress);
 
-  var onPopupEscapePress = function (evt) {
-    if (evt.keyCode === window.util.ESC_KEYCODE) {
-      slider.remove();
-      document.removeEventListener('keydown', onPopupEscapePress);
-    }
-  };
+  // buttonBack.addEventListener('click', function () {
+  //   slider.remove();
+  //   document.removeEventListener('keydown', onPopupEscapePress);
+  // });
 })();
