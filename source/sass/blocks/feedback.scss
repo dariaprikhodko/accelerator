@@ -11,19 +11,20 @@
 
 .feedback-list__item {
   margin-right: 20px;
-  width: 30%;
+  margin-bottom: 25px;
+  width: calc(33.33% - 40px);
   box-sizing: border-box;
 }
 
 .feedback-list__text {
-  height: 342px;
   overflow-y: hidden;
   margin: 0;
   padding: 30px 30px 24px 30px;
+  min-height: 352px;
   box-sizing: border-box;
   background-color: $light-grey;
   font-size: 16px;
-  line-height: 25px;
+  line-height: 24px;
   text-align: center;
 }
 
@@ -56,7 +57,6 @@
 
   .feedback-list__item {
     width: 84%;
-    height: auto;
     padding: 0;
     margin-left: auto;
     margin-right: auto;
@@ -70,7 +70,7 @@
   }
 
   .feedback-list__text {
-    height: auto;
+    min-height: auto;
     padding: 30px 30px 15px 30px;
     font-size: 14px;
     line-height: 22px;

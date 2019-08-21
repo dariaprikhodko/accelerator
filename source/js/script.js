@@ -7,14 +7,10 @@
   var projects = document.querySelector('.projects__title');
   var buttonInfo = document.getElementById('moreInfo');
   var features = document.querySelector('.features');
-  var buttonMonstroy = document.getElementById('montstroy');
-  var montstroySlider = document.getElementById('montstroy-slider');
-  var buttonSmart = document.getElementById('smart-device');
-  var smartSlider = document.getElementById('smart-slider');
-  var buttonBike = document.getElementById('bikeshop');
-  var bikeSlider = document.getElementById('bike-slider');
-  var buttonEscape = document.getElementById('escapeRoom');
-  var escapeSlider = document.getElementById('escape-slider');
+  var buttonsModal = document.querySelectorAll('.js-call-modal');
+  var slider = document.querySelectorAll('.slider-wrapper');
+  var buttonClose = document.querySelector('.button-close');
+  var buttonBack = document.querySelector('.button-back');
 
   buttonCross.forEach(function (btn, i) {
     btn.addEventListener('click', function () {
@@ -29,7 +25,6 @@
     });
   });
 
-
   function handleGoToProjects() {
     projects.scrollIntoView({block: 'start', behavior: 'smooth'});
   }
@@ -41,54 +36,39 @@
   buttonInfo.addEventListener('click', handleGoToFeatures);
 
   // slider show
-
-  buttonMonstroy.addEventListener('click', function () {
-
-    if (montstroySlider.classList.contains('visually-hidden')) {
-      montstroySlider.classList.remove('visually-hidden');
-    }
+  buttonsModal.forEach(function (el) {
+    el.addEventListener('click', function () {
+      var modalEach = el.getAttribute('data-modal');
+      var modalId = document.getElementById(modalEach);
+      if (modalId.classList.contains('visually-hidden')) {
+        modalId.classList.remove('visually-hidden');
+      }
+    });
   });
 
-  buttonSmart.addEventListener('click', function () {
-
-    if (smartSlider.classList.contains('visually-hidden')) {
-      smartSlider.classList.remove('visually-hidden');
-    }
+  // button-cross transition
+  buttonCross.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      btn.classList.toggle('rotate');
+    });
   });
 
-  buttonBike.addEventListener('click', function () {
-
-    if (bikeSlider.classList.contains('visually-hidden')) {
-      bikeSlider.classList.remove('visually-hidden');
-    }
+  buttonClose.addEventListener('click', function () {
+    slider.remove();
+    document.removeEventListener('keydown', onPopupEscapePress);
   });
+  document.addEventListener('keydown', onPopupEscapePress);
 
-  buttonEscape.addEventListener('click', function () {
-
-    if (escapeSlider.classList.contains('visually-hidden')) {
-      escapeSlider.classList.remove('visually-hidden');
-    }
+  buttonBack.addEventListener('click', function () {
+    slider.remove();
+    document.removeEventListener('keydown', onPopupEscapePress);
   });
+  document.addEventListener('keydown', onPopupEscapePress);
 
+  var onPopupEscapePress = function (evt) {
+    if (evt.keyCode === window.util.ESC_KEYCODE) {
+      slider.remove();
+      document.removeEventListener('keydown', onPopupEscapePress);
+    }
+  };
 })();
-
-// var mySwiper = new Swiper('.gallery-top', {
-//   spaceBetween: 10,
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-// });
-
-// var thumbs = document.querySelectorAll('.gallery-thumbs__thumb');
-// thumbs.forEach(function (el, i) {
-//   el.addEventListener('click', function () {
-//     mySwiper.slideTo(i, 500);
-//   });
-// });
-
-// buttonCross.forEach(function (btn, i) {
-//   btn.addEventListener('click', function () {
-//     btn[i].classList.toggle('rotate');
-//   });
-// });

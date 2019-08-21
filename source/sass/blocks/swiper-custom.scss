@@ -56,6 +56,7 @@
 .slider-wrapper {
   position: fixed;
   display: block;
+  max-width: 1200px;
   z-index: 9;
   top: 50%;
   left: 50%;
@@ -113,6 +114,39 @@
     opacity: 0.6;
   }
 }
+
+// .swiper-button-prev {
+//   position: absolute;
+//   left: 330px;
+//   top: 350px;
+//   width: 8px;
+//   height: 13px;
+//   background-image: url("../img/icon-prev.svg");
+//   transform: rotate(180deg);
+//   background-repeat: no-repeat;
+//   border-radius: 50%;
+//   background-color: #ffffff;
+
+//   &:hover {
+//     background-color: $red;
+//   }
+// }
+
+// .swiper-button-next {
+//   position: absolute;
+//   left: 1150px;
+//   top: 350px;
+//   width: 8px;
+//   height: 13px;
+//   background-image: url("../img/icon-next.svg");
+//   background-repeat: no-repeat;
+//   border-radius: 50%;
+//   background-color: #ffffff;
+
+//   &:hover {
+//     background-color: $red;
+//   }
+// }
 
 @media screen and (max-width: 1023px) {
   .slider-wrapper {
