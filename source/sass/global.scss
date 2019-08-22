@@ -51,4 +51,7 @@ input:active.visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }

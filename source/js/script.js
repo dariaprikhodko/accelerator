@@ -2,6 +2,7 @@
 
 (function () {
   var buttonCross = document.querySelectorAll('.button-cross');
+  var thumbs = document.querySelectorAll('.gallery-thumbs__thumb');
   var answer = document.querySelectorAll('.faq-list__answer');
   var buttonTakePart = document.getElementById('participate');
   var projects = document.querySelector('.projects__title');
@@ -43,17 +44,19 @@
       var buttonClose = modalId.querySelector('.button-close');
       function byClose() {
         modalId.classList.add('visually-hidden');
+        this.removeEventListener('click', byClose);
       }
       buttonClose.addEventListener('click', byClose);
-      buttonClose.removeEventListener('click', byClose);
 
       var buttonBack = modalId.querySelector('.button-back');
       buttonBack.addEventListener('click', byClose);
-      buttonBack.removeEventListener('click', byClose);
+      // buttonBack.removeEventListener('click', byClose);
 
-      if (event.keyCode === 27) {
-        document.addEventListener('keydown', byClose);
-      }
+      document.addEventListener('keydown', function (e) {
+        if (e.keyCode === 27) {
+          byClose()
+        }
+      });
     });
   });
 
@@ -64,15 +67,22 @@
     });
   });
 
+  var swiper = document.querySelector('.swiper-container');
+  swiper.onclick = function (e) {
+    for (var i = 0; i < swiper.children.length; i++) {
+      swiper.children[i].classList.remove('thumb-active');
+    }
+    e.target.classList.add('thumb-active');
+  };
 
-  // buttonClose.addEventListener('click', function () {
-  //   slider.remove();
-  //   document.removeEventListener('keydown', onPopupEscapePress);
-  // });
-  // document.addEventListener('keydown', onPopupEscapePress);
-
-  // buttonBack.addEventListener('click', function () {
-  //   slider.remove();
-  //   document.removeEventListener('keydown', onPopupEscapePress);
+  // thumbs.forEach(function (thumb) {
+  //   thumb.addEventListener('click', function () {
+  //     thumb.classList.toggle('thumb-active');
+  //   });
+  //   for (var i = 0; i > thumbs.length; i++) {
+  //     if (thumb[i].classList.contains('thumb-active')) {
+  //       thumb[i].classList.remove('thumb-active');
+  //     }
+  //   }
   // });
 })();
