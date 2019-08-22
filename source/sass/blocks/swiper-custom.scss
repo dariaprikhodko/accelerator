@@ -41,6 +41,13 @@
   overflow: hidden;
   position: relative;
   margin-right: 15px;
+  &:hover {
+    opacity: 0.7;
+  }
+  &:active,
+  &:focus {
+    box-shadow: 0px 0px 0px 2px #000000 inset;
+  }
 
   img {
     position: absolute;
@@ -117,62 +124,94 @@
   }
 }
 
-.swiper-button-prev::before {
-  content: "";
-  display: block;
-  z-index: 1;
-  width: 20px;
-  height: 20px;
-  color: red;
-}
-
-.swiper-button-prev::after {
-  content: "";
-  display: block;
-  top: 18px;
-  z-index: 1;
-  width: 2px;
-  height: 7px;
-  color: red;
-  transform: rotate(-90deg);
-}
-
-.swiper-button-prev {
+.swiper-button-next {
+  position: relative;
   position: absolute;
-  top: 113px;
-  left: 20px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
+  top: 50%;
+  left: 95%;
+  height: 30px;
+  display: block;
+  background: #ffffffcc;
+  border-radius: 50%;
+  &:hover {
+    background-color: $red;
+    color: blue;
+  }
 }
 
 .swiper-button-next::before {
-  content: "";
-  display: block;
-  z-index: 1;
+  content: '';
   width: 2px;
   height: 7px;
-  color: red;
+  display: block;
+  background-color: black;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 47%;
+  left: 50%;
+
+  .swiper-button-next::hover:before {
+    background-color: #ffffff;
+  }
 }
 
 .swiper-button-next::after {
-  content: "";
-  display: block;
-  top: 18px;
-  z-index: 1;
+  content: '';
   width: 2px;
   height: 7px;
-  color: red;
-  transform: rotate(-90deg);
+  display: block;
+  background-color: black;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  .swiper-button-next::hover:before {
+    background-color: #ffffff;
+  }
 }
 
-.swiper-button-next {
+.swiper-button-prev {
+  position: relative;
   position: absolute;
-  top: 113px;
-  left: 573px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
+  top: 50%;
+  left: 2%;
+  height: 30px;
+  display: block;
+  background: #ffffffcc;
+  border-radius: 50%;
+  &:hover {
+    background-color: $red;
+  }
+}
+
+.swiper-button-prev::before {
+  content: '';
+  width: 2px;
+  height: 7px;
+  display: block;
+  background-color: black;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 47%;
+  left: 45%;
+  .swiper-button-next::hover:before {
+    background-color: #ffffff;
+  }
+}
+
+.swiper-button-prev::after {
+  content: '';
+  width: 2px;
+  height: 7px;
+  display: block;
+  background-color: black;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 34%;
+  left: 45%;
+  .swiper-button-next::hover:before {
+    background-color: #ffffff;
+  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -186,7 +225,7 @@
   }
 
   .swiper-container {
-     width: 100%;
+    width: 100%;
   }
 }
 
