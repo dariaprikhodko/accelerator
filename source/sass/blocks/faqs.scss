@@ -51,6 +51,11 @@
   transition: opacity 0.3s ease;
 }
 
+.faq-list__wrapper {
+  position: relative;
+}
+
+
 @media screen and (max-width: 1023px) {
   .faq-list {
     width: 93%;
