@@ -23,7 +23,6 @@
   flex-direction: column;
   box-sizing: border-box;
   width: calc(50% - 15px);
-  height: 100%;
 
   a {
     display: block;
@@ -33,7 +32,6 @@
 .projects__description {
   display: block;
   width: 560px;
-  height: 100%;
   margin: 0 auto;
   font-size: 22px;
   line-height: 33px;
@@ -165,7 +163,6 @@
 
   .projects-list__item {
     width: 100%;
-    min-height: 460px;
   }
 
   .projects-list__item--info {

@@ -290,10 +290,12 @@
         <ul class="faq-list" id="faqlist">
           <li class="faq-list__item">
             <div class="faq-list__wrapper">
-            <h4 class="faq-list__title">Что надо для попадания на стажировку?</h4>
-              <button type="button" class="button-cross">
-                <span class="visually-hidden">menu toggle</span>
-              </button>
+              <a class="faq-list__whole">
+                <h4 class="faq-list__title">Что надо для попадания на стажировку?</h4>
+                <button type="button" class="button-cross">
+                  <span class="visually-hidden">menu toggle</span>
+                </button>
+              </a>
             </div>
             <p class="faq-list__answer faq-list__answer--closed">
                 Обладать базовыми знаниями HTML, CSS, JavaScript. Выбрать проект нужного или желаемого уровня.
@@ -405,34 +407,36 @@
     <button class="slider-button button-close">
       <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1" fill="#2c39f2" fill-rule="evenodd"> <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> </g> </svg>
     </button>
-    <div class="slider-whole-wrap">
-      <div class="swiper-container  gallery-top">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="img/1_montstroy.jpg" alt="Превью макетов"></div>
-          <div class="swiper-slide"><img src="img/2_montstroy.jpg" alt="Превью макетов"></div>
-          <div class="swiper-slide"><img src="img/3_montstroy.jpg" alt="Превью макетов"></div>
-          <div class="swiper-slide"><img src="img/4_montstroy.jpg" alt="Превью макетов"></div>
+    <div class="slider-container">
+      <div class="slider-whole-wrap">
+        <div class="swiper-container  gallery-top">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/1_montstroy.jpg" alt="Превью макетов"></div>
+            <div class="swiper-slide"><img src="img/2_montstroy.jpg" alt="Превью макетов"></div>
+            <div class="swiper-slide"><img src="img/3_montstroy.jpg" alt="Превью макетов"></div>
+            <div class="swiper-slide"><img src="img/4_montstroy.jpg" alt="Превью макетов"></div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="gallery-thumbs">
+          <div class="gallery-thumbs__thumb"><img src="img/1_montstroy.jpg" alt="Превью макетов"></div>
+          <div class="gallery-thumbs__thumb"><img src="img/2_montstroy.jpg" alt="Превью макетов"></div>
+          <div class="gallery-thumbs__thumb"><img src="img/3_montstroy.jpg" alt="Превью макетов"></div>
+          <div class="gallery-thumbs__thumb"><img src="img/4_montstroy.jpg" alt="Превью макетов"></div>
+        </div>
       </div>
-      <div class="gallery-thumbs">
-        <div class="gallery-thumbs__thumb"><img src="img/1_montstroy.jpg" alt="Превью макетов"></div>
-        <div class="gallery-thumbs__thumb"><img src="img/2_montstroy.jpg" alt="Превью макетов"></div>
-        <div class="gallery-thumbs__thumb"><img src="img/3_montstroy.jpg" alt="Превью макетов"></div>
-        <div class="gallery-thumbs__thumb"><img src="img/4_montstroy.jpg" alt="Превью макетов"></div>
-      </div>
-    </div>
-    <div class="slider__description">
-      <h3 class="slider__description--heading projects-list__item--heading">Проект МонтСтрой</h3>
-      <p class="slider__description--price projects-list__item--price">6900 р.</p>
-      <div class="slider__description--text">
-        <p class="slider__description--info slider__description--level">Уровень ⭐️</p>
-        <p class="slider__description--info">Для кого:</p>
-        <p class="slider__description--info slider__description--graduates">Выпускники I уровня вёрстки.</p>
-        <p class="slider__description--info">Описание проекта:</p>
-        <p class="slider__description--info">&mdash; посадочная страница</p>
-        <p class="slider__description--info">&mdash; адаптивность по желанию, без JavaScript</p>
+      <div class="slider__description">
+        <h3 class="slider__description--heading projects-list__item--heading">Проект МонтСтрой</h3>
+        <p class="slider__description--price projects-list__item--price">6900 р.</p>
+        <div class="slider__description--text">
+          <p class="slider__description--info slider__description--level">Уровень ⭐️</p>
+          <p class="slider__description--info">Для кого:</p>
+          <p class="slider__description--info slider__description--graduates">Выпускники I уровня вёрстки.</p>
+          <p class="slider__description--info">Описание проекта:</p>
+          <p class="slider__description--info">&mdash; посадочная страница</p>
+          <p class="slider__description--info">&mdash; адаптивность по желанию, без JavaScript</p>
+        </div>
       </div>
     </div>
   </div>
@@ -442,32 +446,34 @@
     <button class="slider-button button-close">
       <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1" fill="#2c39f2" fill-rule="evenodd"> <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> </g> </svg>
     </button>
-    <div class="slider-whole-wrap">
-      <div class="swiper-container  gallery-top">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="img/1_Smart_Device.jpg" alt="Превью макетов"></div>
-          <div class="swiper-slide"><img src="img/2_Smart_Device.jpg" alt="Превью макетов"></div>
-          <div class="swiper-slide"><img src="img/3_Smart_Device.jpg" alt="Превью макетов"></div>
+    <div class="slider-container">
+      <div class="slider-whole-wrap">
+        <div class="swiper-container  gallery-top">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/1_Smart_Device.jpg" alt="Превью макетов"></div>
+            <div class="swiper-slide"><img src="img/2_Smart_Device.jpg" alt="Превью макетов"></div>
+            <div class="swiper-slide"><img src="img/3_Smart_Device.jpg" alt="Превью макетов"></div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="gallery-thumbs">
+          <div class="gallery-thumbs__thumb"><img src="img/1_Smart_Device.jpg" alt="Превью макетов"></div>
+          <div class="gallery-thumbs__thumb"><img src="img/2_Smart_Device.jpg" alt="Превью макетов"></div>
+          <div class="gallery-thumbs__thumb"><img src="img/3_Smart_Device.jpg" alt="Превью макетов"></div>
+        </div>
       </div>
-      <div class="gallery-thumbs">
-        <div class="gallery-thumbs__thumb"><img src="img/1_Smart_Device.jpg" alt="Превью макетов"></div>
-        <div class="gallery-thumbs__thumb"><img src="img/2_Smart_Device.jpg" alt="Превью макетов"></div>
-        <div class="gallery-thumbs__thumb"><img src="img/3_Smart_Device.jpg" alt="Превью макетов"></div>
-      </div>
-    </div>
-    <div class="slider__description">
-      <h3 class="slider__description--heading projects-list__item--heading">Проект Smart Device</h3>
-      <p class="slider__description--price projects-list__item--price">6900 р.</p>
-      <div class="slider__description--text">
-        <p class="slider__description--info slider__description--level">Уровень ⭐️</p>
-        <p class="slider__description--info">Для кого:</p>
-        <p class="slider__description--info slider__description--graduates">Выпускники I уровня вёрстки.</p>
-        <p class="slider__description--info">Описание проекта:</p>
-        <p class="slider__description--info">&mdash; посадочная страница</p>
-        <p class="slider__description--info">&mdash; адаптивность по желанию, без JavaScript</p>
+      <div class="slider__description">
+        <h3 class="slider__description--heading projects-list__item--heading">Проект Smart Device</h3>
+        <p class="slider__description--price projects-list__item--price">6900 р.</p>
+        <div class="slider__description--text">
+          <p class="slider__description--info slider__description--level">Уровень ⭐️</p>
+          <p class="slider__description--info">Для кого:</p>
+          <p class="slider__description--info slider__description--graduates">Выпускники I уровня вёрстки.</p>
+          <p class="slider__description--info">Описание проекта:</p>
+          <p class="slider__description--info">&mdash; посадочная страница</p>
+          <p class="slider__description--info">&mdash; адаптивность по желанию, без JavaScript</p>
+        </div>
       </div>
     </div>
   </div>
@@ -477,34 +483,36 @@
     <button class="slider-button button-close">
       <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1" fill="#2c39f2" fill-rule="evenodd"> <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> </g> </svg>
     </button>
-    <div class="slider-whole-wrap">
-      <div class="swiper-container  gallery-top">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="img/1_bikeshop.jpg" alt="Превью макетов"></div>
-          <div class="swiper-slide"><img src="img/2_bikeshop.jpg" alt="Превью макетов"></div>
-          <div class="swiper-slide"><img src="img/3_bikeshop.jpg" alt="Превью макетов"></div>
-          <div class="swiper-slide"><img src="img/4_bikeshop.jpg" alt="Превью макетов"></div>
+    <div class="slider-container">
+      <div class="slider-whole-wrap">
+        <div class="swiper-container  gallery-top">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/1_bikeshop.jpg" alt="Превью макетов"></div>
+            <div class="swiper-slide"><img src="img/2_bikeshop.jpg" alt="Превью макетов"></div>
+            <div class="swiper-slide"><img src="img/3_bikeshop.jpg" alt="Превью макетов"></div>
+            <div class="swiper-slide"><img src="img/4_bikeshop.jpg" alt="Превью макетов"></div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="gallery-thumbs">
+          <div class="gallery-thumbs__thumb"><img src="img/1_bikeshop.jpg" alt="Превью макетов"></div>
+          <div class="gallery-thumbs__thumb"><img src="img/2_bikeshop.jpg" alt="Превью макетов"></div>
+          <div class="gallery-thumbs__thumb"><img src="img/3_bikeshop.jpg" alt="Превью макетов"></div>
+          <div class="gallery-thumbs__thumb"><img src="img/4_bikeshop.jpg" alt="Превью макетов"></div>
+        </div>
       </div>
-      <div class="gallery-thumbs">
-        <div class="gallery-thumbs__thumb"><img src="img/1_bikeshop.jpg" alt="Превью макетов"></div>
-        <div class="gallery-thumbs__thumb"><img src="img/2_bikeshop.jpg" alt="Превью макетов"></div>
-        <div class="gallery-thumbs__thumb"><img src="img/3_bikeshop.jpg" alt="Превью макетов"></div>
-        <div class="gallery-thumbs__thumb"><img src="img/4_bikeshop.jpg" alt="Превью макетов"></div>
-      </div>
-    </div>
-    <div class="slider__description">
-      <h3 class="slider__description--heading projects-list__item--heading">Проект BikeShop</h3>
-      <p class="slider__description--price projects-list__item--price">11500 р.</p>
-      <div class="slider__description--text">
-        <p class="slider__description--info slider__description--level">Уровень ⭐️⭐️</p>
-        <p class="slider__description--info">Для кого:</p>
-        <p class="slider__description--info slider__description--graduates">Выпускники II уровня вёрстки.</p>
-        <p class="slider__description--info">Описание проекта:</p>
-        <p class="slider__description--info">&mdash; интернет-магазин, 2 страницы, фильтры, бегунки, слайдеры</p>
-        <p class="slider__description--info">&mdash; 3 разрешения, использование JavaScript</p>
+      <div class="slider__description">
+        <h3 class="slider__description--heading projects-list__item--heading">Проект BikeShop</h3>
+        <p class="slider__description--price projects-list__item--price">11500 р.</p>
+        <div class="slider__description--text">
+          <p class="slider__description--info slider__description--level">Уровень ⭐️⭐️</p>
+          <p class="slider__description--info">Для кого:</p>
+          <p class="slider__description--info slider__description--graduates">Выпускники II уровня вёрстки.</p>
+          <p class="slider__description--info">Описание проекта:</p>
+          <p class="slider__description--info">&mdash; интернет-магазин, 2 страницы, фильтры, бегунки, слайдеры</p>
+          <p class="slider__description--info">&mdash; 3 разрешения, использование JavaScript</p>
+        </div>
       </div>
     </div>
   </div>
@@ -514,34 +522,36 @@
   <button class="slider-button button-close">
     <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1" fill="#2c39f2" fill-rule="evenodd"> <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> </g> </svg>
   </button>
-  <div class="slider-whole-wrap">
-    <div class="swiper-container  gallery-top">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="img/1_escaperoom.jpg" alt="Превью макетов"></div>
-        <div class="swiper-slide"><img src="img/2__escaperoom.jpg" alt="Превью макетов"></div>
-        <div class="swiper-slide"><img src="img/3__escaperoom.jpg" alt="Превью макетов"></div>
-        <div class="swiper-slide"><img src="img/4__escaperoom.jpg" alt="Превью макетов"></div>
+  <div class="slider-container">
+    <div class="slider-whole-wrap">
+      <div class="swiper-container  gallery-top">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/1_escaperoom.jpg" alt="Превью макетов"></div>
+          <div class="swiper-slide"><img src="img/2__escaperoom.jpg" alt="Превью макетов"></div>
+          <div class="swiper-slide"><img src="img/3__escaperoom.jpg" alt="Превью макетов"></div>
+          <div class="swiper-slide"><img src="img/4__escaperoom.jpg" alt="Превью макетов"></div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+      <div class="gallery-thumbs">
+        <div class="gallery-thumbs__thumb"><img src="img/1_escaperoom.jpg" alt="Превью макетов"></div>
+        <div class="gallery-thumbs__thumb"><img src="img/2__escaperoom.jpg" alt="Превью макетов"></div>
+        <div class="gallery-thumbs__thumb"><img src="img/3__escaperoom.jpg" alt="Превью макетов"></div>
+        <div class="gallery-thumbs__thumb"><img src="img/4__escaperoom.jpg" alt="Превью макетов"></div>
+      </div>
     </div>
-    <div class="gallery-thumbs">
-      <div class="gallery-thumbs__thumb"><img src="img/1_escaperoom.jpg" alt="Превью макетов"></div>
-      <div class="gallery-thumbs__thumb"><img src="img/2__escaperoom.jpg" alt="Превью макетов"></div>
-      <div class="gallery-thumbs__thumb"><img src="img/3__escaperoom.jpg" alt="Превью макетов"></div>
-      <div class="gallery-thumbs__thumb"><img src="img/4__escaperoom.jpg" alt="Превью макетов"></div>
-    </div>
-  </div>
-  <div class="slider__description">
-    <h3 class="slider__description--heading projects-list__item--heading">Проект Escape Room</h3>
-    <p class="slider__description--price projects-list__item--price">11500 р.</p>
-    <div class="slider__description--text">
-      <p class="slider__description--info slider__description--level">Уровень ⭐️⭐️⭐️</p>
-      <p class="slider__description--info">Для кого:</p>
-      <p class="slider__description--info slider__description--graduates">Выпускники II уровня вёрстки.</p>
-      <p class="slider__description--info">Описание проекта:</p>
-      <p class="slider__description--info">&mdash; промо-магазин, 4 страницы, расписание, формы, модальные окна</p>
-      <p class="slider__description--info">&mdash; 3 разрешения, использование JavaScript</p>
+    <div class="slider__description">
+      <h3 class="slider__description--heading projects-list__item--heading">Проект Escape Room</h3>
+      <p class="slider__description--price projects-list__item--price">11500 р.</p>
+      <div class="slider__description--text">
+        <p class="slider__description--info slider__description--level">Уровень ⭐️⭐️⭐️</p>
+        <p class="slider__description--info">Для кого:</p>
+        <p class="slider__description--info slider__description--graduates">Выпускники II уровня вёрстки.</p>
+        <p class="slider__description--info">Описание проекта:</p>
+        <p class="slider__description--info">&mdash; промо-магазин, 4 страницы, расписание, формы, модальные окна</p>
+        <p class="slider__description--info">&mdash; 3 разрешения, использование JavaScript</p>
+      </div>
     </div>
   </div>
 </div>

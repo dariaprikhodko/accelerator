@@ -30,6 +30,10 @@
   border-top: 1px solid $light-grey;
 }
 
+.aq-list__whole {
+  display: block;
+}
+
 .faq-list__item:last-child {
   border-bottom: 1px solid $light-grey;
 }

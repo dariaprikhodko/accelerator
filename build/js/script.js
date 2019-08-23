@@ -9,6 +9,8 @@
   var buttonInfo = document.getElementById('moreInfo');
   var features = document.querySelector('.features');
   var buttonsModal = document.querySelectorAll('.js-call-modal');
+  var bodyElement = document.body;
+  var htmlElement = document.querySelector('html');
 
   buttonCross.forEach(function (btn, i) {
     btn.addEventListener('click', function () {
@@ -40,11 +42,15 @@
       var modalId = document.getElementById(modalEach);
       if (modalId.classList.contains('visually-hidden')) {
         modalId.classList.remove('visually-hidden');
+        bodyElement.classList.add('left-padding');
+        htmlElement.classList.add('stop-scroll');
       }
       var buttonClose = modalId.querySelector('.button-close');
       function byClose() {
         modalId.classList.add('visually-hidden');
         this.removeEventListener('click', byClose);
+        bodyElement.classList.remove('left-padding');
+        htmlElement.classList.remove('stop-scroll');
       }
       buttonClose.addEventListener('click', byClose);
 
@@ -84,6 +90,8 @@
       thumb.classList.add('thumb-active');
     });
   });
+
+
   // document.body.style.position = 'fixed';
   // windowScroll = document.body.style.top;
 
