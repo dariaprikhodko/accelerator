@@ -11,6 +11,8 @@
   var buttonsModal = document.querySelectorAll('.js-call-modal');
   var bodyElement = document.body;
   var htmlElement = document.querySelector('html');
+  var btnNext = document.querySelectorAll('swiper-button-next');
+  var btnPrev = document.querySelectorAll('swiper-button-prev');
 
   buttonCross.forEach(function (btn, i) {
     btn.addEventListener('click', function () {
@@ -73,14 +75,6 @@
     });
   });
 
-  // var swiper = document.querySelector('.swiper-container');
-  // swiper.onclick = function (e) {
-  //   for (var i = 0; i < swiper.children.length; i++) {
-  //     swiper.children[i].classList.remove('thumb-active');
-  //   }
-  //   e.target.classList.add('thumb-active');
-  // };
-
   thumbs[0].classList.add('thumb-active');
   thumbs.forEach(function (thumb) {
     thumb.addEventListener('click', function () {
@@ -90,29 +84,5 @@
       thumb.classList.add('thumb-active');
     });
   });
-
-
-  // document.body.style.position = 'fixed';
-  // windowScroll = document.body.style.top;
-
-  // var top = document.body.style.top;
-  // document.body.style.position = '';
-  // document.body.style.top = '';
-  // window.scrollTo(0, parseInt(scrollY || '0', 10) * -1);
-
-  // var body = document.body;
-  // body.style.position = 'fixed';
-  // var windowScroll = window.scrollY + 'px';
-  // body.style.top = windowScroll;
-
-  // var closeDialog = function () {
-  //   var scrollY = body.style.top;
-  //   body.style.position = '';
-  //   body.style.top = '';
-  //   window.scrollTo(0, parseInt(scrollY || '0', 10) * -1);
-  // };
-  // window.addEventListener('scroll', function () {
-  //   document.documentElement.style.setProperty('--scroll-y', windowScroll);
-  // });
 
 })();
