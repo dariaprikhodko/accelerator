@@ -67,22 +67,22 @@
     });
   });
 
-  var swiper = document.querySelector('.swiper-container');
-  swiper.onclick = function (e) {
-    for (var i = 0; i < swiper.children.length; i++) {
-      swiper.children[i].classList.remove('thumb-active');
-    }
-    e.target.classList.add('thumb-active');
-  };
-
-  // thumbs.forEach(function (thumb) {
-  //   thumb.addEventListener('click', function () {
-  //     thumb.classList.toggle('thumb-active');
-  //   });
-  //   for (var i = 0; i > thumbs.length; i++) {
-  //     if (thumb[i].classList.contains('thumb-active')) {
-  //       thumb[i].classList.remove('thumb-active');
-  //     }
+  // var swiper = document.querySelector('.swiper-container');
+  // swiper.onclick = function (e) {
+  //   for (var i = 0; i < swiper.children.length; i++) {
+  //     swiper.children[i].classList.remove('thumb-active');
   //   }
-  // });
+  //   e.target.classList.add('thumb-active');
+  // };
+
+  thumbs[0].classList.add('active-thumb');
+  thumbs.forEach(function (thumb) {
+    thumb.addEventListener('click', function () {
+      thumbs.forEach(function (el) {
+        el.classList.remove('active-thumb');
+      });
+      thumb.classList.add('thumb-active');
+    });
+  });
+
 })();
