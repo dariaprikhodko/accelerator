@@ -75,22 +75,36 @@
   //   e.target.classList.add('thumb-active');
   // };
 
-  thumbs[0].classList.add('active-thumb');
+  thumbs[0].classList.add('thumb-active');
   thumbs.forEach(function (thumb) {
     thumb.addEventListener('click', function () {
       thumbs.forEach(function (el) {
-        el.classList.remove('active-thumb');
+        el.classList.remove('thumb-active');
       });
       thumb.classList.add('thumb-active');
     });
   });
+  // document.body.style.position = 'fixed';
+  // windowScroll = document.body.style.top;
 
-  document.body.style.position = 'fixed';
-  document.body.style.top = `-${window.scrollY}px`;
+  // var top = document.body.style.top;
+  // document.body.style.position = '';
+  // document.body.style.top = '';
+  // window.scrollTo(0, parseInt(scrollY || '0', 10) * -1);
 
-  const top = document.body.style.top;
-  document.body.style.position = '';
-  document.body.style.top = '';
-  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+  // var body = document.body;
+  // body.style.position = 'fixed';
+  // var windowScroll = window.scrollY + 'px';
+  // body.style.top = windowScroll;
+
+  // var closeDialog = function () {
+  //   var scrollY = body.style.top;
+  //   body.style.position = '';
+  //   body.style.top = '';
+  //   window.scrollTo(0, parseInt(scrollY || '0', 10) * -1);
+  // };
+  // window.addEventListener('scroll', function () {
+  //   document.documentElement.style.setProperty('--scroll-y', windowScroll);
+  // });
 
 })();

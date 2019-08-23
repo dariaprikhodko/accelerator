@@ -23,6 +23,7 @@
   flex-direction: column;
   box-sizing: border-box;
   width: calc(50% - 15px);
+  height: 100%;
 
   a {
     display: block;
@@ -164,6 +165,7 @@
 
   .projects-list__item {
     width: 100%;
+    min-height: 460px;
   }
 
   .projects-list__item--info {

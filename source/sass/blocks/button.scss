@@ -109,7 +109,7 @@
 }
 
 .rotate {
-  transform: rotate(-45deg);
+  transform: rotate(-45deg), translateY(-50%);
   transition: ease-in-out .2s;
 }
 
