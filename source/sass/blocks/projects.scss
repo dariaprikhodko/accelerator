@@ -27,6 +27,10 @@
   a {
     display: block;
   }
+
+  li {
+    margin-bottom: 75px;
+  }
 }
 
 .projects__description {
@@ -99,9 +103,11 @@
 }
 
 .projects-list__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   padding-top: 12px;
-  // padding-bottom: 55px;
   padding-left: 25px;
   box-sizing: border-box;
 }
@@ -109,6 +115,10 @@
 .projects-help >.page-main__wrapper {
   display: flex;
   max-width: 1200px;
+}
+
+.projects-list__wrapper {
+  margin-bottom: 25px;
 }
 
 @media screen and (max-width: 1023px) {

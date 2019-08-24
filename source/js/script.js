@@ -11,11 +11,23 @@
   var buttonsModal = document.querySelectorAll('.js-call-modal');
   var bodyElement = document.body;
   var htmlElement = document.querySelector('html');
-  var btnNext = document.querySelectorAll('swiper-button-next');
-  var btnPrev = document.querySelectorAll('swiper-button-prev');
+  var faqTitles = document.querySelectorAll('.faq-list__wrapper');
 
-  buttonCross.forEach(function (btn, i) {
-    btn.addEventListener('click', function () {
+  // buttonCross.forEach(function (btn, i) {
+  //   btn.addEventListener('click', function () {
+
+  //     if (answer[i].classList.contains('faq-list__answer--closed')) {
+  //       answer[i].classList.remove('faq-list__answer--closed');
+  //       answer[i].classList.add('faq-list__answer--opened');
+  //     } else {
+  //       answer[i].classList.add('faq-list__answer--closed');
+  //       answer[i].classList.remove('faq-list__answer--opened');
+  //     }
+  //   });
+  // });
+
+  faqTitles.forEach(function (title, i) {
+    title.addEventListener('click', function () {
 
       if (answer[i].classList.contains('faq-list__answer--closed')) {
         answer[i].classList.remove('faq-list__answer--closed');
@@ -58,7 +70,6 @@
 
       var buttonBack = modalId.querySelector('.button-back');
       buttonBack.addEventListener('click', byClose);
-      // buttonBack.removeEventListener('click', byClose);
 
       document.addEventListener('keydown', function (e) {
         if (e.keyCode === 27) {

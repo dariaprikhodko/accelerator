@@ -52,11 +52,16 @@
 .faq-list__answer--opened {
   display: block;
   opacity: 1;
-  transition: opacity 0.3s ease;
+  transition: max-height ease-in-out .3s,opacity ease-in-out .3s;
+  transition-property: max-height, opacity;
+  transition-duration: 0.3s, 0.3s;
+  transition-timing-function: ease-in-out, ease-in-out;
+  transition-delay: 0s, 0s;
 }
 
 .faq-list__wrapper {
   position: relative;
+  cursor: pointer;
 }
 
 
