@@ -13,19 +13,6 @@
   var htmlElement = document.querySelector('html');
   var faqTitles = document.querySelectorAll('.faq-list__wrapper');
 
-  // buttonCross.forEach(function (btn, i) {
-  //   btn.addEventListener('click', function () {
-
-  //     if (answer[i].classList.contains('faq-list__answer--closed')) {
-  //       answer[i].classList.remove('faq-list__answer--closed');
-  //       answer[i].classList.add('faq-list__answer--opened');
-  //     } else {
-  //       answer[i].classList.add('faq-list__answer--closed');
-  //       answer[i].classList.remove('faq-list__answer--opened');
-  //     }
-  //   });
-  // });
-
   faqTitles.forEach(function (title, i) {
     title.addEventListener('click', function () {
 
