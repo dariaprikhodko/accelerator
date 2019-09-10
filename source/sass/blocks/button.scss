@@ -99,20 +99,10 @@
     background-image: url("../img/icon-cross.svg");
     background-repeat: no-repeat;
   }
-
-  // &:focus,
-  // &:active {
-  //   background-image: url("../img/icon-cross.svg");
-  //   background-repeat: no-repeat;
-  //   border-radius: 50%;
-  //   background-color: $blue;
-  //   transition: opacity ease-in-out .2s;
-  //   transition: translateY(-50%), rotate(-45deg);
-  // }
 }
 
 .rotate {
-  transform: translateY(-50%), rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
   transition: all ease-in-out .2s;
 }
 

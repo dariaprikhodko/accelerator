@@ -41,16 +41,16 @@
 .faq-list__answer {
   margin: 0;
   padding: 0;
-  padding-bottom: 40px;
-}
-
-.faq-list__answer--closed {
-  display: none;
+  max-height: 0;
+  transition: max-height ease-in-out .3s;
+  overflow: hidden;
 }
 
 .faq-list__answer--opened {
   display: block;
-  transition: max-height ease-in-out .3s,opacity ease-in-out .3s;
+  max-height: 200px;
+  transition: max-height ease-in-out .3s;
+  margin-bottom: 40px;
 }
 
 .faq-list__wrapper {
