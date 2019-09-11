@@ -37,7 +37,7 @@
 }
 
 .button-project {
-  margin-left: auto;
+  margin: 0 auto;
   padding-top: 15px;
 }
 
@@ -135,7 +135,7 @@
   }
 
   .button-big {
-    width: 208px;
+    width: 180px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -146,5 +146,9 @@
 
   .button-middle {
     width: 240px;
+  }
+
+  .button-project {
+    min-width: 180px;
   }
 }

@@ -68,7 +68,7 @@
   }
 
   .page-header__wrapper {
-    padding-left: 20px;
+    padding-left: 70px;
     padding-right: 20px;
     padding-top: 220px;
   }
@@ -76,6 +76,10 @@
   .page-header__container {
     max-width: 600px;
     margin-left: 0;
+  }
+
+  .page-header__title {
+    padding-bottom: 15px;
   }
 }
 
@@ -96,7 +100,7 @@
   }
 
   .page-header__description {
-    width: auto;
+    width: 300px;
     padding-bottom: 30px;
     font-size: 26px;
     line-height: 37px;

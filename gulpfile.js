@@ -19,7 +19,7 @@ var imageminPngquant = require("imagemin-pngquant");
 var imageminZopfli = require("imagemin-zopfli");
 var imageminMozjpeg = require("imagemin-mozjpeg");
 var imageminGiflossy = require("imagemin-giflossy");
-var cache = require("gulp-cache");
+// var cache = require("gulp-cache");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -53,21 +53,9 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-// gulp.task("images", function () {
-//   return gulp.src("source/img/**/*.{png,jpg,svg}")
-//     .pipe(imagemin([
-//       imagemin.optipng({optimizationLevel: 3}),
-//       imagemin.jpegtran({progressive: true}),
-//       imagemin.svgo()
-//     ]))
-
-//     .pipe(gulp.dest("source/img"));
-
-// });
-
 gulp.task('images', function (done) {
   gulp.src('build/img/**/*.{png,jpg,gif}')
-      .pipe(cache(imagemin([
+      .pipe((imagemin([
         // png
         imageminPngquant({
           speed: 1,
@@ -100,7 +88,7 @@ gulp.task('images', function (done) {
         // }),
         // jpg very light lossy, use vs jpegtran
         imageminMozjpeg({
-          quality: 90
+          quality: 40
         })
       ]))) .pipe(gulp.dest('build/img'));
   done();
