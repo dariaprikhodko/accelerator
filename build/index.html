@@ -572,6 +572,8 @@
       prevEl: '.swiper-button-prev',
     },
     loop: true,
+    observer: true,
+    observerParents: true
   });
 
   var thumbsContainer = document.querySelectorAll('.gallery-thumbs');
@@ -581,21 +583,14 @@
       thumbs.forEach(function (el) {
         el.classList.remove('thumb-active');
       });
-      // thumbs.forEach(function (block, y) {
-      //   block.addEventListener('click', function () {
-      //     mySwiper[i].slideTo(y);
-      //   });
-      // });
-      // thumbs (function (el, num) { el.on('click' function (i) {myswiper[num].slideTo(i)})})
       thumbs[el.realIndex].classList.add('thumb-active');
     });
   });
-
     thumbsContainer.forEach(function (el, i) {
       var thumbs = Array.from(el.children);
       thumbs.forEach(function (block, y) {
         block.addEventListener('click', function () {
-          mySwiper[i].slideTo(y);
+          mySwiper[i].slideToLoop(y);
         });
       });
     });
