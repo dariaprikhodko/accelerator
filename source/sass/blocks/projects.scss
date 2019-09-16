@@ -29,6 +29,12 @@
   }
 }
 
+.projects-list__picture {
+  position: relative;
+  height: 195px;
+  overflow: hidden;
+}
+
 .projects__description {
   display: block;
   width: 560px;
@@ -39,8 +45,12 @@
 }
 
 .projects-list__item--img {
-  max-width: 552px;
-  height: 316px;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   vertical-align: bottom;
   font-size: 0;
   line-height: 0;
@@ -165,6 +175,11 @@
     width: 95%;
     padding-left: 15px;
     box-sizing: border-box;
+  }
+
+  .projects-list__picture {
+    height: 193px;
+    overflow: hidden;
   }
 
   .projects-list__item {
