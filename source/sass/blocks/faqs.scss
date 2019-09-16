@@ -47,9 +47,12 @@
 }
 
 .faq-list__answer--opened {
-  display: block;
   max-height: 200px;
   transition: max-height ease-in-out .3s;
+}
+
+.faq-list__text {
+  display: block;
   margin-bottom: 40px;
 }
 

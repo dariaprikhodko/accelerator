@@ -40,10 +40,19 @@
 
 .projects-list__item--img {
   width: 100%;
-  height: auto;
+  height: 100%;
   vertical-align: bottom;
   font-size: 0;
   line-height: 0;
+
+  &:hover {
+    opacity: 0.7;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    transition: background-color, color, border-color, box-shadow;
+    transition-duration: 0.2s, 0.2s, 0.2s, 0.2s;
+    transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s, 0s, 0s;
+  }
 }
 
 .projects-help {
@@ -89,6 +98,15 @@
   font-weight: 500;
   text-decoration: none;
   color: $blue;
+
+  &:hover {
+    color: $red;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    transition: background-color, color, border-color, box-shadow;
+    transition-duration: 0.2s, 0.2s, 0.2s, 0.2s;
+    transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s, 0s, 0s;
+  }
 }
 
 .projects-list__item--text {
