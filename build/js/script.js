@@ -49,7 +49,7 @@
       var buttonClose = modalId.querySelector('.button-close');
       function byClose() {
         modalId.classList.add('visually-hidden');
-        this.removeEventListener('click', byClose);
+        modalId.removeEventListener('click', byClose);
         bodyElement.classList.remove('left-padding');
         htmlElement.classList.remove('stop-scroll');
       }
@@ -82,5 +82,35 @@
       thumb.classList.add('thumb-active');
     });
   });
+
+  var mySwiper = new Swiper('.gallery-top', {
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    loop: true,
+    observer: true,
+    observeParents: true
+  });
+
+  var thumbsContainer = document.querySelectorAll('.gallery-thumbs');
+  mySwiper.forEach(function (el, i) {
+    el.on('slideChange', function () {
+      var thumbs = Array.from(thumbsContainer[i].children);
+      thumbs.forEach(function (el) {
+        el.classList.remove('thumb-active');
+      });
+      thumbs[el.realIndex].classList.add('thumb-active');
+    });
+  });
+    thumbsContainer.forEach(function (el, i) {
+      var thumbs = Array.from(el.children);
+      thumbs.forEach(function (block, y) {
+        block.addEventListener('click', function () {
+          mySwiper[i].slideToLoop(y);
+        });
+      });
+    });
 
 })();
