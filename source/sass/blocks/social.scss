@@ -1,5 +1,6 @@
 .social {
   display: flex;
+  flex-wrap: wrap;
   padding-top: 10px;
   margin: 0;
   list-style: none;
@@ -7,6 +8,11 @@
 
 .social__item {
   margin-right: 10px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: background-color, color, border-color, box-shadow;
+  transition-duration: 0.2s, 0.2s, 0.2s, 0.2s;
+  transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+  transition-delay: 0s, 0s, 0s, 0s;
 
   &:hover svg,
   &:focus svg,

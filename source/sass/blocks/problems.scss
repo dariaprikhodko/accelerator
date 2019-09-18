@@ -6,8 +6,8 @@
 .problems-list {
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 20px 0 20px;
-  justify-content: space-around;
+  padding: 20px 70px 0 70px;
+  justify-content: space-between;
   margin: 0;
   list-style: none;
 }
@@ -47,6 +47,7 @@
 @media screen and (max-width: 1023px) {
   .problems-list {
     flex-direction: column;
+    padding: 20px 40px 0 40px;
   }
 
   .problems-list__description {

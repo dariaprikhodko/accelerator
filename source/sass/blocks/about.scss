@@ -11,6 +11,11 @@
   a {
     color: $blue;
     text-decoration: none;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    transition-property: background-color, color, border-color, box-shadow;
+    transition-duration: 0.2s, 0.2s, 0.2s, 0.2s;
+    transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s, 0s, 0s;
 
     &:hover,
     &:active,
