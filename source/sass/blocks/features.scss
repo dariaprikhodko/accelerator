@@ -17,6 +17,7 @@
   margin-top: 27px;
   margin-right: 10px;
   min-width: 350px;
+  width: 450px;
   font-size: 24px;
   line-height: 32px;
   color: $blue;
@@ -30,6 +31,7 @@
 .features-list__description {
   margin-right: 110px;
   max-width: 46%;
+  width: 560px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -48,6 +50,7 @@
     padding-bottom: 7px;
     padding-top: 7px;
     padding-left: 0;
+    width: auto;
     font-size: 22px;
     line-height: 30px;
   }
@@ -92,6 +95,7 @@
 
   .features-list__description {
     max-width: 280px;
+    width: auto;
     margin-bottom: 25px;
     font-size: 14px;
     line-height: 20px;

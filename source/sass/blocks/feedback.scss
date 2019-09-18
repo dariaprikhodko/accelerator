@@ -4,18 +4,23 @@
 
 .feedback-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   padding: 0;
   padding: 0 10px;
+  margin-left: 40px;
   list-style: none;
 }
 
 .feedback-list__item {
-  margin-right: 20px;
+  margin-right: 60px;
   margin-bottom: 25px;
   width: calc(33.33% - 40px);
   box-sizing: border-box;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+  }
 }
 
 .feedback-list__text {
@@ -55,6 +60,7 @@
     flex-direction: column;
     padding-left: 0;
     margin-top: 70px;
+    margin-left: 0;
   }
 
   .feedback-list__item {
@@ -68,6 +74,10 @@
       &:first-child {
       margin-left: auto;
       margin-right: auto;
+    }
+
+      &:nth-child(3n) {
+       margin-right: 50px;
     }
   }
 
