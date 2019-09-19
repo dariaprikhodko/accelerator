@@ -16,9 +16,9 @@
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
 
-  &:hover svg,
-  &:focus svg,
-  &:active svg {
+  &:hover,
+  &:focus,
+  &:active {
     opacity: 0.7;
   }
 }
